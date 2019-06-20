@@ -3,6 +3,10 @@ var coord_init=[0,0];
 var coord_act=[0,0];
 var coord_middle=[get_middle_pos('serrure0'),get_middle_pos('serrure1'),get_middle_pos('serrure2'),get_middle_pos('serrure3')];
 var angles_serrures=[0,0,0,0]
+
+var son_tic = new Audio('../ressources/audios/Tic_serrure.mp3');
+
+
 function tourner_serrure(event,ref)
 {
     name_serrure="serrure"+ref;
@@ -10,6 +14,7 @@ function tourner_serrure(event,ref)
         coord_init=[event.clientX,event.clientY];
         angle_initial=angle(coord_middle[ref],coord_init) - (angles_serrures[ref]*Math.PI/180);
         status_clic = true;
+        
     }
    
     if(status_clic == true){
@@ -22,6 +27,7 @@ function tourner_serrure(event,ref)
        
         document.getElementById(name_serrure).style.transform = 'rotate('+angle_diff+'deg)';
         mettre_a_jour_angle(name_serrure,ref);
+        son_tic.play();
     }
     document.onmouseup = function(){
         status_clic = false;
