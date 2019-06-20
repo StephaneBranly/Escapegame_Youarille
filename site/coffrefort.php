@@ -14,12 +14,17 @@
         <p id='coord_clic_maintenu'>Coordonnées : x ; y </p>
         <p id='status'></p>
         <p id='distance'>a</p>
-        <p id='angleini'>a</p>
-        <p id='angleact'>a</p>-->
+        <p id='angleini'>a</p>-->
     </section>
     <section>
         <p id='coord'>Coordonnées : x ; y </p>
     </section>
+    <form>
+        <input type='number' id='angle0'/>
+        <input type='number' id='angle1'/>
+        <input type='number' id='angle2'/>
+        <input type='number' id='angle3'/>
+    </form>
 </body>
 </html>
 
