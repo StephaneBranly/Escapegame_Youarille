@@ -5,26 +5,24 @@
 </head>
 
 <body onmousemove="avoircoordonnees(event);">
-	<section>
-        <img onDragStart="return false" onmousemove="tourner_serrure(event,0);" id='serrure0' class='serrure_coffre' src='../ressources/Serrure_coffre_fort.png'/>
-        <img onDragStart="return false" onmousemove="tourner_serrure(event,1);" id='serrure1' class='serrure_coffre' src='../ressources/Serrure_coffre_fort.png'/>
-        <img onDragStart="return false" onmousemove="tourner_serrure(event,2);" id='serrure2' class='serrure_coffre' src='../ressources/Serrure_coffre_fort.png'/>
-        <img onDragStart="return false" onmousemove="tourner_serrure(event,3);" id='serrure3' class='serrure_coffre' src='../ressources/Serrure_coffre_fort.png'/>
-        <!--<p id='coord_clic'>Coordonnées : x ; y </p>
-        <p id='coord_clic_maintenu'>Coordonnées : x ; y </p>
-        <p id='status'></p>
-        <p id='distance'>a</p>
-        <p id='angleini'>a</p>-->
+	<section id='main'>
+        <div id='les_serrures_coffre'>
+            <img onDragStart="return false" onmousemove="tourner_serrure(event,0);" id='serrure0' class='serrure_coffre' src='../ressources/Serrure_coffre_fort.png'/>
+            <img onDragStart="return false" onmousemove="tourner_serrure(event,1);" id='serrure1' class='serrure_coffre' src='../ressources/Serrure_coffre_fort.png'/>
+            <img onDragStart="return false" onmousemove="tourner_serrure(event,2);" id='serrure2' class='serrure_coffre' src='../ressources/Serrure_coffre_fort.png'/>
+            <img onDragStart="return false" onmousemove="tourner_serrure(event,3);" id='serrure3' class='serrure_coffre' src='../ressources/Serrure_coffre_fort.png'/>
+        </div>
     </section>
-    <section>
+    <section id='text_section'>
         <p id='coord'>Coordonnées : x ; y </p>
+        <form>
+            <input type='number' id='angle0'/>
+            <input type='number' id='angle1'/>
+            <input type='number' id='angle2'/>
+            <input type='number' id='angle3'/>
+        </form>
     </section>
-    <form>
-        <input type='number' id='angle0'/>
-        <input type='number' id='angle1'/>
-        <input type='number' id='angle2'/>
-        <input type='number' id='angle3'/>
-    </form>
+    
 </body>
 </html>
 
