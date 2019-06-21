@@ -3,9 +3,13 @@
 	src: url('../ressources/fonts/Postface.otf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
-	}
+}
 
-
+/* designs globaux */
+frame
+{
+	height: 100px;
+}
 body
 {
 	margin: 0;
@@ -53,6 +57,39 @@ button:hover
 	border-top: 2px solid black;
 }
 
+/* Design debug Hitbox */
+.une_hitbox
+{
+	position: absolute;
+	background-color: rgba(255,0,0,0.3);
+	border:1px solid red;
+	color: white;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Les popups */
+.popup
+{
+	display: block;
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+}
+#popup_intro
+{
+	background-color: rgba(0,0,0,0.7);
+	border: -2px solid yellow;
+	color: yellow;
+	border-radius: 15px;
+}
+#popup_pika
+{
+	height: 50%;
+	background-image: url(../ressources/images/Pika_popup.png);
+	background-size: auto 90%;
+}
+
 /* intro.php*/
 #intro
 {
@@ -72,26 +109,4 @@ button:hover
 #les_serrures_coffre
 {
 	background-image: url('../ressources/images/metal_pale.jpg');
-}
-
-/* Les popups */
-.popup
-{
-	display: inline;
-	position: absolute;
-	margin: 0px;
-	padding: 0px;
-}
-#popup_intro
-{
-	background-color: rgba(0,0,0,0.7);
-	border: -2px solid yellow;
-	color: yellow;
-	border-radius: 15px;
-}
-#popup_pika
-{
-	height: 50%;
-	background-image: url(../ressources/images/Pika_popup.png);
-	background-size: auto 90%;
 }

@@ -5,7 +5,7 @@
         <title>Youarille Escape Game - UTC</title>
         <meta charset="UTF-8">
     </head>
-	<frameset COLS = "100%">
+	<frameset COLS = "100%" ROWS="auto">
 		<frame src="./site/intro.php" name="game">
 	</frameset>
 </html>
