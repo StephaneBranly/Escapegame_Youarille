@@ -110,6 +110,14 @@ button:hover
 	background-size: auto 90%;
 	background-position: center;
 }
+#popup_lettre
+{
+	height: 90%;
+	background-image: url(../ressources/images/lettre.jpg);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
 /* intro.php*/
 #intro
 {

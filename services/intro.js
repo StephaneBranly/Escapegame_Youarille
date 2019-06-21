@@ -3,6 +3,7 @@ var pikaaaa = new Audio('../ressources/audios/Pikaaaa.mp3');
 var radio_soviet = new Audio('../ressources/audios/radio_soviet.mp3');
 var ouverture_lettre = new Audio('../ressources/audios/ouverture_lettre.mp3');
 var clic_souris = new Audio('../ressources/audios/clic_souris.mp3');
+var appel_tel = new Audio('../ressources/audios/appel_tel.mp3');
 son_tel.play();
 
 var tableau_hitbox = [
@@ -32,6 +33,7 @@ function click_intro(id_hitbox)
                 break;
             case 2:
                 clearInterval(repeat_tel);
+                appel_tel.play();
                 open_popup('popup_tel');
                 break;
             case 3:
@@ -39,6 +41,7 @@ function click_intro(id_hitbox)
                 break;
             case 4:
                 ouverture_lettre.play();
+                open_popup('popup_lettre');
                 break;
             default:
                 break;

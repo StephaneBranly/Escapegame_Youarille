@@ -13,6 +13,7 @@
                 <p class='popup' id='popup_pika' style="visibility:hidden" onclick="close_popup('popup_pika');"></p>
                 <p class='popup' id='popup_tel' style="visibility:hidden" onclick="close_popup('popup_tel');"></p>
                 <p class='popup' id='popup_screen_credit_pc' style="visibility:hidden" onclick="close_popup('popup_screen_credit_pc');"></p>
+                <p class='popup' id='popup_lettre' style="visibility:hidden" onclick="close_popup('popup_lettre');"></p>
                 <div id ='hitbox'>
                     <p id='hitbox0' class='une_hitbox' style='top: 50px;
                         left: 400px;
