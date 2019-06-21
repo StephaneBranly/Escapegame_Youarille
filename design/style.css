@@ -73,11 +73,14 @@ button:hover
 {
 	display: block;
 	position: absolute;
+	width: 100%;
+	height: 100%;
 	margin: 0px;
 	padding: 0px;
 }
 #popup_intro
 {
+	height: 30%;
 	background-color: rgba(0,0,0,0.7);
 	border: -2px solid yellow;
 	color: yellow;
@@ -87,13 +90,31 @@ button:hover
 {
 	height: 50%;
 	background-image: url(../ressources/images/Pika_popup.png);
+	background-repeat: no-repeat;
 	background-size: auto 90%;
+	background-position: center;
 }
-
+#popup_screen_credit_pc
+{
+	height: 90%;
+	background-image: url(../ressources/images/Screen_PC_credits.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_tel
+{
+	height: 90%;
+	background-image: url(../ressources/images/Tel.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
 /* intro.php*/
 #intro
 {
 	background-image: url('../ressources/images/Intro_bg.png');
+	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center; 
 }

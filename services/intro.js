@@ -1,6 +1,8 @@
 var son_tel = new Audio('../ressources/audios/son_telephone.mp3');
 var pikaaaa = new Audio('../ressources/audios/Pikaaaa.mp3');
 var radio_soviet = new Audio('../ressources/audios/radio_soviet.mp3');
+var ouverture_lettre = new Audio('../ressources/audios/ouverture_lettre.mp3');
+var clic_souris = new Audio('../ressources/audios/clic_souris.mp3');
 son_tel.play();
 
 var tableau_hitbox = [
@@ -24,11 +26,19 @@ function click_intro(id_hitbox)
                 pikaaaa.play();
                 open_popup('popup_pika');
                 break;
+            case 1:
+                clic_souris.play();
+                open_popup('popup_screen_credit_pc');
+                break;
             case 2:
                 clearInterval(repeat_tel);
+                open_popup('popup_tel');
                 break;
             case 3:
                 radio_soviet.play();
+                break;
+            case 4:
+                ouverture_lettre.play();
                 break;
             default:
                 break;
