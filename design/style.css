@@ -4,6 +4,12 @@
 	font-weight: normal;
 	font-style: normal;
 }
+@font-face {
+	font-family: 'VCR';
+	src: url('../ressources/fonts/VCR.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 /* designs globaux */
 frame
@@ -15,7 +21,7 @@ body
 	margin: 0;
 	padding: 0;
 	background-color: black;
-	font-family: 'Postface', Arial, sans-serif;
+	font-family: 'VCR','Postface', Arial, sans-serif;
 }
 section
 {
@@ -37,14 +43,16 @@ section
 }
 #text_section
 {
-	font-family: 'Postface', Arial, sans-serif;
+	font-family: 'VCR','Postface', Arial, sans-serif;
 	width: 100%;
-	background-color: rgba(0,0,0,0.7);
+	background-color: rgba(4, 0, 255,0.8);
 	position: absolute;
 	bottom:0px;
-	border-top: 2px solid yellow;
-	color: yellow;
+	border-top: 4px solid rgb(200, 200, 255);
+	color: rgb(200, 200, 255);
+	text-shadow: -2px -2px 0px rgb(2, 0, 114);
 }
+
 button
 {
 	border:0px;
@@ -80,11 +88,12 @@ button:hover
 }
 #popup_intro
 {
-	height: 30%;
-	background-color: rgba(0,0,0,0.7);
-	border: -2px solid yellow;
-	color: yellow;
-	border-radius: 15px;
+	height: 98%;
+	width: 98%;
+	background-color: rgba(0,0,0,0.9);
+	border: 1px solid rgb(144, 209, 169);
+	color: rgb(144, 209, 169);
+	border-radius: 50px;
 }
 #popup_pika
 {

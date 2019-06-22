@@ -31,7 +31,7 @@ function angle(coord1,coord2)
 
 function in_hit_box(event,tableau_coord,param_hb_dim_bg)
 {
-    //show_hit_box(event,tableau_coord,param_hb_dim_bg);
+    show_hit_box(event,tableau_coord,param_hb_dim_bg);
     var x = event.clientX;
     var y = event.clientY;
     posx_rel = x*param_hb_dim_bg[0]/Lscreen;
