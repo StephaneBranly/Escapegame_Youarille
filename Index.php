@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
     </head>
 	<frameset COLS = "100%" ROWS="auto">
-		<frame src="./site/intro.php" name="game">
+		<frame src="./site/intro.php?debut=1" name="game">
 	</frameset>
 </html>
 

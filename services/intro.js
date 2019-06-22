@@ -1,10 +1,17 @@
 var son_tel = new Audio('../ressources/audios/son_telephone.mp3');
 var pikaaaa = new Audio('../ressources/audios/Pikaaaa.mp3');
 var radio_soviet = new Audio('../ressources/audios/radio_soviet.mp3');
-var ouverture_lettre = new Audio('../ressources/audios/ouverture_lettre.mp3');
 var clic_souris = new Audio('../ressources/audios/clic_souris.mp3');
-var appel_tel = new Audio('../ressources/audios/appel_tel.mp3');
-son_tel.play();
+repeat_tel = setInterval("son_tel.play();", 6000);
+if(document.getElementById('popup_intro'))
+{
+    open_popup('popup_intro');
+    son_tel.play();
+}
+else
+{
+    clearInterval(repeat_tel);
+}
 
 var tableau_hitbox = [
                         [997,1095,1305,1448],
@@ -16,7 +23,7 @@ var tableau_hitbox = [
 
 var param_hb_dim_bg = [4608,3456];
 
-repeat_tel = setInterval("son_tel.play();", 6000);
+
 
 function click_intro(id_hitbox)
 {
@@ -29,7 +36,9 @@ function click_intro(id_hitbox)
                 break;
             case 1:
                 clic_souris.play();
-                open_popup('popup_screen_credit_pc');
+                
+                open_popup('popup_screen_credit_pc')
+                setTimeout(function() { document.location.href="pc.php"; }, 500);;
                 break;
             case 2:
                 clearInterval(repeat_tel);
@@ -40,7 +49,6 @@ function click_intro(id_hitbox)
                 radio_soviet.play();
                 break;
             case 4:
-                ouverture_lettre.play();
                 open_popup('popup_lettre');
                 break;
             default:
