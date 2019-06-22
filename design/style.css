@@ -103,10 +103,10 @@ button:hover
 	background-size: auto 90%;
 	background-position: center;
 }
-#popup_screen_credit_pc
+#popup_screen_pc
 {
 	height: 90%;
-	background-image: url(../ressources/images/Screen_PC_credits.png);
+	background-image: url(../ressources/images/Screen_PC.png);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
 	background-position: center;

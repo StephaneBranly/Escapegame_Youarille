@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<link href="./design/style.css" rel="stylesheet" media="all" type="text/css">
 	<link rel="icon" href="./Ressources/images/favicon.ico" type="image/x-icon"/>

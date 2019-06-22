@@ -36,9 +36,8 @@ function click_intro(id_hitbox)
                 break;
             case 1:
                 clic_souris.play();
-                
-                open_popup('popup_screen_credit_pc')
-                setTimeout(function() { document.location.href="pc.php"; }, 500);;
+                open_popup('popup_screen_pc')
+                setTimeout(function() { document.location.href="pc_accueil.php"; }, 500);;
                 break;
             case 2:
                 clearInterval(repeat_tel);
