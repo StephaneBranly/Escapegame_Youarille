@@ -19,7 +19,7 @@
 <?php
     if(isset($_POST['horde_user']))
     {
-        if($_POST['horde_user']=='wesh')
+        if($_POST['horde_user']=='Vendetta')
         {
             echo "<div class='extras'>Help: première attaque pikachu</div>";
         }

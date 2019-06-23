@@ -29,9 +29,12 @@ function angle(coord1,coord2)
     return Math.atan2(opp,adj);
 }
 
-function in_hit_box(event,tableau_coord,param_hb_dim_bg)
+function in_hit_box(event,tableau_coord,param_hb_dim_bg,show)
 {
-    show_hit_box(event,tableau_coord,param_hb_dim_bg);
+    if(show==true)
+    {
+        show_hit_box(event,tableau_coord,param_hb_dim_bg);
+    }
     var x = event.clientX;
     var y = event.clientY;
     posx_rel = x*param_hb_dim_bg[0]/Lscreen;

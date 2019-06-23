@@ -5,7 +5,7 @@
     </head>
     <body>
         <section id='main'>
-            <div id='intro' onclick="click_intro(in_hit_box(event,tableau_hitbox,param_hb_dim_bg));">
+            <div id='intro' onclick="click_intro(in_hit_box(event,tableau_hitbox,param_hb_dim_bg,true));">
                 <?php
                     if($_GET['debut']==1)
                     {
@@ -30,7 +30,7 @@
             </div>
         </section>
         <section id='text_section'>
-            <p class='typewriter'>Intéragissez avec le décor<a href='./intro.php?debut=0'>fdffd</a></p>
+            <p class='typewriter'>Intéragissez avec le décor</p>
         </section> 
     </body>
 </html>

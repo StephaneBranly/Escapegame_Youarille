@@ -16,7 +16,16 @@
     color: rgba(168, 18, 18, 0.849);
     background-color: white;
 }
-
+#info_simulation
+{
+    padding: 10px;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    background-color: rgba(247, 135, 8, 0.849);
+    border:3px solid rgb(163, 65, 0);
+    color: white;
+}
 /* Global default styles. */
 * {
     /* Zero out all padding and margins to start with for better
