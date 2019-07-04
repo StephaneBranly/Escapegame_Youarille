@@ -152,6 +152,7 @@
             
             <br>
             <table width='100%''><tbody><tr><td align='center'>Powered by horde</td></tr></tbody></table>";
+            echo "";
         }
 ?>
 
