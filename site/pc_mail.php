@@ -65,66 +65,83 @@
                                 </div>
                             </div>
                         </div>
-                        <div class='msglist' style='width: auto;'>
-                            <a href='pc_mail.php?mail=1&mdp=queuedefer&user=Vendetta'><div class='vpRowHoriz flagList vpRow DragElt' id='VProw_1' style='-moz-user-select: none;'>
-                                <div class='msgFrom sep' title='elhajjah@utc.fr'>Ahmad EL HAJJ</div>
-                                <div class='msgSubject sep' title='[mt22] exercices corrigés'>[mt22] exercices corrigés</div>
-                                <div class='msgDate sep'>09:51:10 PM</div>
-                                <div class='msgSize sep'>4.6 MB</div>
-                            </div></a>
-                            <a href='pc_mail.php?mail=2&mdp=queuedefer&user=Vendetta'><div class='vpRowHoriz flagAnswered flagPersonal vpRow DragElt' id='VProw_4' style='background: rgb(204, 255, 204) none repeat scroll 0% 0%; -moz-user-select: none;'>
-                                <div class='msgFrom sep' title='bvidolov@utc.fr'>bvidolov</div>
-                                <div class='msgSubject sep' title='RE: TN05 - Votre resultat'>RE: TN05 - Votre resultat</div>
-                                <div class='msgDate sep'>06/21/2019</div>
-                                <div class='msgSize sep'>13 KB</div>
-                            </div></a>
-                            <a href='pc_mail.php?mail=3&mdp=queuedefer&user=Vendetta'><div class='vpRowHoriz flagHighpriority flagList vpRow DragElt' id='VProw_6' style='background: rgb(255, 204, 204) none repeat scroll 0% 0%; -moz-user-select: none;'>
-                                <div class='msgFrom sep' title='marie-anne.traisnel@utc.fr'>Marie-Anne Traisnel</div>
-                                <div class='msgSubject sep' title='[ingenieur-p2019] RAPPEL attention annonce vague de forte chaleur la semaine prochaine'>[ingenieur-p2019] RAPPEL attention annonce vague de forte chaleur la semaine prochaine</div>
-                                <div class='msgDate sep'>06/21/2019</div>
-                                <div class='msgSize sep'>19 KB</div>
-                            </div></a>
-                            <a href='pc_mail.php?mail=4&mdp=queuedefer&user=Vendetta'><div class='vpRowHoriz flagPersonal vpRow DragElt' id='VProw_7' style='-moz-user-select: none;'>
-                                <div class='msgFrom sep' title='cap+messages_moodle@utc.fr'>Merci de ne pas répondre à ce courriel (via moodle.utc.fr)</div>
-                                <div class='msgSubject sep' title='Vous avez remis votre travail pour le devoir Dépôt du troisième rapport de TP'>Vous avez remis votre travail pour le devoir Dépôt du troisième rapport de TP</div>
-                                <div class='msgDate sep'>06/20/2019</div>
-                                <div class='msgSize sep'>4 KB</div>
-                            </div></a>
-                        </div>
+                        <div class='msglist' style='width: auto;'>";
+                        $mails= array(
+                            array(1,'john.ford@utc.fr','John Ford','[av01] retour vers le turfu','08/29/2019','21 KB','12:53:24 PM CEST',
+                                    'Bonjour, <br/><br/>
+                                    n\'oubliez pas de regarder le film pour le prochain cours, 
+                                    il pourra éventuellement y avoir des questions sur ce dernier 
+                                    et nous ferons une étude des différents plans 
+                                    <br/><br/>Bonne journée,<br/>John Ford'),
+                            array(2,'jean-marie.kastrel@utc.fr','Jean-Marie Kastrel','[tn04] liste des projets','08/24/2019','54 KB','3:27:27 PM CEST',
+                                    'Bonjour,<br/><br/>
+                                    En raison de travaux, nous avons du déplacer les projets TN04 dans mon labo personnel, cela fait que vous ne pourrez pas y accéder avant la fin septembre.<br/>
+                                    Je vous remercie d\'avance pour votre compréhension, nous faisons le maximum pour que vous puissiez continuer à travailler deçu<br/><br/>
+                                    Cordialement, Jean-Marie<br/><br/>
+                                    -------------------<br/>
+                                    Jean-Marie Kastrel<br/>
+                                    Labo 53, Rue du Dr Schweitzer, 60200 Compiègne<br/>
+                                    +33321548482'),
+                            array(3,'flandre.pause@utc.fr','Flandre Pause','[cm11] basique','05/29/2019','33 KB','7:33:12 PM CEST', 'A remplir'),
+                            array(4,'maraine.tannassy@utc.fr','Maraine Tannassy','[mt90] preparation a la premiere PLS','09/24/2018','32 KB','9:25:00 AM CEST','A remplir'),
+                            array(5,'stephane.branly@etu.utc.fr','Stéphane Branly','[youa] YOUAre the best','01/27/2019','29 KB','9:05:33 AM CEST','A remplir')
+                            );
+                        
+                            foreach($mails as $un_mail)
+                            {
+
+                            echo"<a href='pc_mail.php?mail=$un_mail[0]&mdp=queuedefer&user=Vendetta'><div class='vpRowHoriz vpRow DragElt' id='VProw_6' style='background: none repeat scroll 0% 0%; -moz-user-select: none;'>
+                                <div class='msgFrom sep' title='$un_mail[1]'>$un_mail[2]</div>
+                                <div class='msgSubject sep' title='$un_mail[3]'>$un_mail[3]</div>
+                                <div class='msgDate sep'>$un_mail[4]</div>
+                                <div class='msgSize sep'>$un_mail[5]</div>
+                            </div></a>";
+                            }
+                        echo "</div>
                     </div>
-                </div>
-                <div id='previewPane' style='height: 373px;'>
-                    <div id='previewMsg' style=''>
-                        <div class='msgHeaders'>
-                            <div id='msgHeadersColl'>
-                                <ul class='rightFloat'>
-                                    <li>
-                                        <div class='date'>06/21/2019 (12:59:41 PM CEST)</div>
-                                    </li>
-                                    <li>
-                                        <a id='preview_other'>
-                                        <span class='iconImg' title='Other Options'></span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li>
-                                        <div class='iconImg' id='th_expand' title='Expand Headers'></div>
-                                        <span class='subject allowTextSelection'>Re: [mt22] P18</span>
-                                        from         <span class='from'>Ahmad EL HAJJ</span>
-                                    </li>
-                                </ul>
+                </div>";
+                if (isset($_GET['mail']))
+                {
+                    foreach($mails as $un_mail)
+                    {
+                        if($_GET['mail']==$un_mail[0])
+                        {
+                            echo "<div id='previewPane' style='height: 373px;'>
+                            <div id='previewMsg' style=''>
+                                <div class='msgHeaders'>
+                                    <div id='msgHeadersColl'>
+                                        <ul class='rightFloat'>
+                                            <li>
+                                                <div class='date'>$un_mail[4] ($un_mail[6])</div>
+                                            </li>
+                                            <li>
+                                                <a id='preview_other'>
+                                                <span class='iconImg' title='Other Options'></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li>
+                                                <div class='iconImg' id='th_expand' title='Expand Headers'></div>
+                                                <span class='subject allowTextSelection'>$un_mail[3]</span>
+                                                from         <span class='from'>$un_mail[2]</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <div id='msgHeaders' style='display:none'>
+                                    <div>
+                                        <span class='subject allowTextSelection'>$un_mail[3]</span>
+                                    </div>
+                                </div>
                             </div>
-                        <div id='msgHeaders' style='display:none'>
-                            <div>
-                                <span class='subject allowTextSelection'>Re: [mt22] P18</span>
+                            <div id='messageBody' class='messageBody allowTextSelection'>
+                                $un_mail[7]
                             </div>
-                        </div>
-                    </div>
-                    <div id='messageBody' class='messageBody allowTextSelection'>
-                        Contenu du mail
-                    </div>
-                </div>
+                        </div>";
+                        }
+                    }
+                }
+                echo"
             </div>
         </div>
     </div>";
@@ -152,7 +169,6 @@
             
             <br>
             <table width='100%''><tbody><tr><td align='center'>Powered by horde</td></tr></tbody></table>";
-            echo "";
         }
 ?>
 

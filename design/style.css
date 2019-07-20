@@ -58,7 +58,40 @@ section
 	color: rgb(200, 200, 255);
 	text-shadow: -2px -2px 0px rgb(2, 0, 114);
 }
-
+.fleche
+{
+	display: block;
+	z-index: 1;
+	padding: 0px;
+	margin: 0px;
+	position: absolute;
+	top:45%;
+	height:100px;
+	width:100px;
+	transition:0.5s all; 
+}
+.fleche:hover
+{
+	height:110px;
+	width:110px;
+	transition:0.5s all; 
+}
+.fleche_right
+{
+	right: 30px;
+	background-image: url(../ressources/images/fleche_right.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+.fleche_left
+{
+	left: 30px;
+	background-image: url(../ressources/images/fleche_left.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
 button
 {
 	border:0px;
@@ -142,7 +175,60 @@ button:hover
 	background-position: center; 
 }
 
-
+/* taxi.php */
+#taxi
+{
+	background-image: url(../ressources/images/taxi_bg.jpg); 
+	background-repeat: no-repeat; 
+	background-size: 100% auto; 
+	background-position: center;
+}
+#taxi #destination
+{
+	display: inline-block;
+	background-color: rgba(0,0,0,0.9);
+	color: white;
+	border-radius: 10px;
+	margin-top: 100px;
+	padding: none;
+	margin: none;
+	width: 50%;
+	
+	border: 2px solid grey;
+}
+#taxi .submit_button
+{
+	font-family: 'atwriter','VCR','Postface', Arial, sans-serif;
+	background: rgba(189, 186, 7, 0.5);
+	border: solid 2px rgb(230, 176, 0);
+	color: white;
+	transition: 0.5s all;
+	padding:10px;
+}
+#taxi #address
+{
+	font-family: 'atwriter','VCR','Postface', Arial, sans-serif;
+	background: rgba(189, 7, 7, 0.5);
+	border: solid 2px rgb(230, 0, 0);
+	padding:10px;
+	width: 90%;
+	color: white;
+}
+#taxi .submit_button:hover
+{
+	background: rgba(7, 189, 16, 0.5);
+	border: solid 2px rgb(0, 230, 12);
+	cursor: pointer;
+}
+#taxi #reponse
+{
+	background: rgba(189, 7, 7, 0.5);
+	border: solid 2px rgb(230, 0, 0);
+	width: 80%;
+	margin: 20px;
+	padding:10px;
+	color: white;
+}
 /* coffrefort.php */
 .serrure_coffre
 {
