@@ -51,12 +51,11 @@ section
 {
 	font-family: 'atwriter','VCR','Postface', Arial, sans-serif;
 	width: 100%;
-	background-color: rgba(4, 0, 255,0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 	position: absolute;
 	bottom:0px;
-	border-top: 4px solid rgb(200, 200, 255);
-	color: rgb(200, 200, 255);
-	text-shadow: -2px -2px 0px rgb(2, 0, 114);
+	border-top: 4px solid rgb(144, 209, 169);
+	color: rgb(144, 209, 169);
 }
 .fleche
 {
@@ -103,7 +102,12 @@ button:hover
 	border:0px;
 	border-top: 2px solid black;
 }
-
+.image_icone
+{
+	display: inline-block;
+	width: 200px;
+	height: auto;
+}
 /* Design debug Hitbox */
 .une_hitbox
 {
@@ -127,12 +131,14 @@ button:hover
 }
 #popup_intro
 {
-	height: 98%;
-	width: 98%;
-	background-color: rgba(0,0,0,0.9);
-	border: 1px solid rgb(144, 209, 169);
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.95);
 	color: rgb(144, 209, 169);
-	border-radius: 50px;
+	-webkit-box-shadow:inset 0px 0px 0px 10px rgb(144, 209, 169);
+    -moz-box-shadow:inset 0px 0px 0px 10px rgb(144, 209, 169);
+    box-shadow:inset 0px 0px 0px 10px rgb(144, 209, 169);
+	z-index: 10;
 }
 #popup_pika
 {
@@ -228,6 +234,14 @@ button:hover
 	margin: 20px;
 	padding:10px;
 	color: white;
+}
+/* taxi_escape.php */
+#taxi_escape
+{
+	background-image: url('../ressources/images/taxi_escape_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center; 
 }
 /* coffrefort.php */
 .serrure_coffre

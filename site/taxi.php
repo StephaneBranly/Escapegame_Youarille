@@ -7,7 +7,7 @@
         <section id='main'>
             <div id='taxi'>
                 <div id='destination'>
-                    <form action="taxi.php" method="post">
+                    <form action="taxi.php" method="post"><br/>
                         Bonjour Vendetta, je vous emmène où ?<br/><br/>
                         <label for="address">Adresse : </label><br/>
                         <input type="text" autocapitalize="off" autocorrect="off" id="address" name="address"><br/><br/>
@@ -18,7 +18,10 @@
                         {
                             if($_POST['address']=='Labo 53, Rue du Dr Schweitzer, 60200 Compiègne')
                             {
-                                echo "<div id='Reponse'>Il y a 5 minutes de trajet, vous voulez y aller ? <a href=''><input class='submit_button' value=\"C'est parti\"></a></div>";
+                                echo "<div id='Reponse'>Ah encore, vous êtes sûr d'y aller ? <a href='taxi_escape.php'><input class='submit_button' value=\"C'est parti\"></a></div>";
+                                echo " <script type='text/javascript'>var here_we_go_again = new Audio('../ressources/audios/here_we_go_again.mp3');
+                                here_we_go_again.play(); </script>
+                                ";
                             }
                             else
                             {

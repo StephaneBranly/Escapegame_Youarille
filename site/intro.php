@@ -10,8 +10,10 @@
                     if($_GET['debut']==1)
                     {
                         echo"<p class='popup' id='popup_intro' style=\"visibility:hidden\" onclick=\"close_popup('popup_intro');\">
-                        <br/><br/><br/><br/>Bienvenue futur Youa !<br/>
-                        Nous espérons que ce petit escape game te plaira ! <br/><br/>
+                        <br/><br/><br/><img class='image_icone' src='../ressources/images/logo_integ.png' alt='Logo integ'/>
+                        <img class='image_icone' src='../ressources/images/logo_youa.png' alt='Logo youa'/>
+                        <br/><br/>Bienvenue futur Youa !<br/>
+                        <br/>Nous espérons que ce petit escape game te plaira ! <br/><br/>
                         <br/>N'hésite pas à contacter @stephane_branly si tu es bloqué
                         <br/>Codé avec amour par Stéphane BRANLY tu l'auras compris!
                         <br/><br/>(Le but de ce mini escape game est de proposer du contenu divertissant aux nouvös de l'UTC, j'ai conscience que cet escape game n'est pas parfait (optimisé pour PC, sur Mozilla))
