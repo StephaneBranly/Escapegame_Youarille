@@ -1,6 +1,7 @@
 //var son_tel = new Audio('../ressources/audios/son_telephone.mp3');
 //repeat_tel = setInterval("son_tel.play();", 6000);
-
+var poignee_portiere_audio = new Audio('../ressources/audios/poignee_portiere.mp3');
+var loquet_audio = new Audio('../ressources/audios/loquet.mp3');
 var masse_audio = new Audio('../ressources/audios/masse.mp3');
 var bouteille_eau_audio = new Audio('../ressources/audios/avaler_eau.mp3');
 var briquet_audio = new Audio('../ressources/audios/briquet.mp3');
@@ -48,9 +49,7 @@ function click_intro(id_hitbox)
                 }
                 break;
             case 2:
-                clearInterval(repeat_tel);
-                appel_tel.play();
-                open_popup('popup_tel');
+                poignee_portiere_audio.play();
                 break;
             case 3:
                 if(briquet==false)
@@ -70,6 +69,9 @@ function click_intro(id_hitbox)
                     masse=true;
                 }
                break;
+            case 5:
+                loquet_audio.play();
+                break;
             default:
                 break;
         }
