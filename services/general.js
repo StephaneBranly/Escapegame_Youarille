@@ -38,3 +38,8 @@ function open_popup(name_popup)
             break;
     }
 }
+
+function add_item(name_item)
+{
+    document.getElementById("item_bar").insertAdjacentHTML('beforeend', "<img id='"+name_item+"' alt='"+name_item+"' src='../ressources/images/"+name_item+".png'/>");
+}

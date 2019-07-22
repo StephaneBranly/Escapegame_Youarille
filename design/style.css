@@ -172,10 +172,42 @@ button:hover
 	background-size: auto 90%;
 	background-position: center;
 }
+#popup_coffre
+{
+	height: 90%;
+	background-image: url(../ressources/images/masse.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_portiere
+{
+	height: 90%;
+	background-image: url(../ressources/images/magazine.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_repose_bras
+{
+	height: 90%;
+	background-image: url(../ressources/images/briquet.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_cache_voiture
+{
+	height: 90%;
+	background-image: url(../ressources/images/bouteille_eau.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
 /* intro.php*/
 #intro
 {
-	background-image: url('../ressources/images/Intro_bg.png');
+	background-image: url(../ressources/images/Intro_bg.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center; 
@@ -199,7 +231,6 @@ button:hover
 	padding: none;
 	margin: none;
 	width: 50%;
-	
 	border: 2px solid grey;
 }
 #taxi .submit_button
@@ -242,6 +273,28 @@ button:hover
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center; 
+}
+#item_bar
+{
+	position: absolute;
+	bottom: 70px;
+	right: 50px;
+	padding: 10px;
+	margin: none;
+}
+#item_bar img
+{
+	display: inline-block;
+	width: auto;
+	height: 50px;
+	border:1px solid white;
+	padding: 5px;
+	margin: 5px;
+}
+#item_bar img:hover
+{
+	background-color:  rgba(144, 209, 169, 0.5); 
+	border:1px solid rgb(144, 209, 169);
 }
 /* coffrefort.php */
 .serrure_coffre

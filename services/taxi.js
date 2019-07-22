@@ -20,14 +20,13 @@ function click_intro(id_hitbox)
     if(active_popup==false)
     {
         switch(id_hitbox){
-            case 0: 
-                pikaaaa.play();
-                open_popup('popup_pika');
+            case 0:
+                open_popup('popup_portiere');
+                add_item('magazine');
                 break;
             case 1:
-                clic_souris.play();
-                open_popup('popup_screen_pc')
-                setTimeout(function() { document.location.href="pc_accueil.php"; }, 500);;
+                open_popup('popup_cache_voiture');
+                add_item('bouteille_eau');
                 break;
             case 2:
                 clearInterval(repeat_tel);
@@ -35,10 +34,12 @@ function click_intro(id_hitbox)
                 open_popup('popup_tel');
                 break;
             case 3:
-                radio_soviet.play();
+                open_popup('popup_repose_bras');
+                add_item('briquet');
                 break;
             case 4:
-                open_popup('popup_lettre');
+                open_popup('popup_coffre');
+                add_item('masse');
                 break;
             default:
                 break;
