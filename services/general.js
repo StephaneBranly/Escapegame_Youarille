@@ -41,5 +41,5 @@ function open_popup(name_popup)
 
 function add_item(name_item)
 {
-    document.getElementById("item_bar").insertAdjacentHTML('beforeend', "<img id='"+name_item+"' alt='"+name_item+"' src='../ressources/images/"+name_item+".png'/>");
+    document.getElementById("item_bar").insertAdjacentHTML('beforeend', "<img id='"+name_item+"' class='no_selected' onclick=\"select_item('"+name_item+"');\" alt='"+name_item+"' src='../ressources/images/"+name_item+".png'/>");
 }

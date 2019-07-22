@@ -282,19 +282,29 @@ button:hover
 	padding: 10px;
 	margin: none;
 }
-#item_bar img
+#item_bar .no_selected
 {
 	display: inline-block;
 	width: auto;
 	height: 50px;
-	border:1px solid white;
+	border-top:3px solid white;
+	background-color:  rgba(255, 255, 255, 0.5); 
 	padding: 5px;
 	margin: 5px;
 }
-#item_bar img:hover
+#item_bar .no_selected:hover, #item_bar .selected:hover
 {
+	border-top:3px solid rgb(144, 209, 169);
+}
+#item_bar .selected
+{
+	display: inline-block;
+	width: auto;
+	height: 50px;
+	border-top:3px solid white;
 	background-color:  rgba(144, 209, 169, 0.5); 
-	border:1px solid rgb(144, 209, 169);
+	padding: 5px;
+	margin: 10px;
 }
 /* coffrefort.php */
 .serrure_coffre

@@ -1,5 +1,10 @@
 //var son_tel = new Audio('../ressources/audios/son_telephone.mp3');
 //repeat_tel = setInterval("son_tel.play();", 6000);
+
+var masse_audio = new Audio('../ressources/audios/masse.mp3');
+var bouteille_eau_audio = new Audio('../ressources/audios/avaler_eau.mp3');
+var briquet_audio = new Audio('../ressources/audios/briquet.mp3');
+var ouverture_lettre = new Audio('../ressources/audios/ouverture_lettre.mp3');
 var tableau_hitbox = [
                         [49,598,342,787],
                         [821,304,1063,606],
@@ -13,7 +18,11 @@ var tableau_hitbox = [
 
 var param_hb_dim_bg = [1600,803];
 
-
+var magazine=false;
+var briquet=false;
+var bouteille_eau=false;
+var masse=false;
+var active_item='none';
 
 function click_intro(id_hitbox)
 {
@@ -21,12 +30,22 @@ function click_intro(id_hitbox)
     {
         switch(id_hitbox){
             case 0:
-                open_popup('popup_portiere');
-                add_item('magazine');
+                if(magazine==false)
+                {
+                    open_popup('popup_portiere');
+                    add_item('magazine');
+                    ouverture_lettre.play();
+                    magazine=true;
+                }
                 break;
             case 1:
-                open_popup('popup_cache_voiture');
-                add_item('bouteille_eau');
+                if(bouteille_eau==false)
+                {
+                    open_popup('popup_cache_voiture');  
+                    add_item('bouteille_eau');
+                    bouteille_eau_audio.play();
+                    bouteille_eau=true;
+                }
                 break;
             case 2:
                 clearInterval(repeat_tel);
@@ -34,15 +53,35 @@ function click_intro(id_hitbox)
                 open_popup('popup_tel');
                 break;
             case 3:
-                open_popup('popup_repose_bras');
-                add_item('briquet');
+                if(briquet==false)
+                {
+                    open_popup('popup_repose_bras');
+                    add_item('briquet');
+                    briquet_audio.play();
+                    briquet=true;
+                }
                 break;
             case 4:
-                open_popup('popup_coffre');
-                add_item('masse');
-                break;
+                if(masse==false)
+                {
+                    open_popup('popup_coffre');
+                    add_item('masse');
+                    masse_audio.play();
+                    masse=true;
+                }
+               break;
             default:
                 break;
         }
     }
+}
+
+function select_item(name_item)
+{
+    if(active_item!='none')
+    {
+        document.getElementById(active_item).className = 'no_selected';
+    }
+    active_item=name_item;
+    document.getElementById(active_item).className =  'selected';
 }
