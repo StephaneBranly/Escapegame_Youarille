@@ -1,5 +1,8 @@
 //var son_tel = new Audio('../ressources/audios/son_telephone.mp3');
 //repeat_tel = setInterval("son_tel.play();", 6000);
+
+var fuite_audio = new Audio('../ressources/audios/fuite.mp3');
+var casser_fenetre_audio = new Audio('../ressources/audios/casser_fenetre.mp3');
 var poignee_portiere_audio = new Audio('../ressources/audios/poignee_portiere.mp3');
 var loquet_audio = new Audio('../ressources/audios/loquet.mp3');
 var masse_audio = new Audio('../ressources/audios/masse.mp3');
@@ -25,6 +28,8 @@ var bouteille_eau=false;
 var masse=false;
 var active_item='none';
 
+
+fuite_audio.play();
 function click_intro(id_hitbox)
 {
     if(active_popup==false)
@@ -49,6 +54,7 @@ function click_intro(id_hitbox)
                 }
                 break;
             case 2:
+                open_popup('popup_poignee_portiere');
                 poignee_portiere_audio.play();
                 break;
             case 3:
@@ -71,6 +77,19 @@ function click_intro(id_hitbox)
                break;
             case 5:
                 loquet_audio.play();
+                open_popup('popup_loquet');
+                break;
+            case 6:
+                if(active_item=='masse')
+                {
+                    break_window();
+                }
+                break;
+            case 7:
+                    if(active_item=='masse')
+                    {
+                        break_window();
+                    }
                 break;
             default:
                 break;
@@ -86,4 +105,9 @@ function select_item(name_item)
     }
     active_item=name_item;
     document.getElementById(active_item).className =  'selected';
+}
+
+function break_window()
+{
+    casser_fenetre_audio.play();
 }

@@ -125,8 +125,44 @@ button:hover
 	top:20px;
 	left:50px;
 	color: white;
-	padding: 5px;
+	padding: 15px;
 	border: 3px solid red;
+	background-color: rgba(0,0,0,0.5);
+	width: 110px;
+	text-align: center;
+}
+/* Item bar */
+#item_bar
+{
+	position: absolute;
+	bottom: 70px;
+	right: 50px;
+	padding: 10px;
+	margin: none;
+}
+#item_bar .no_selected
+{
+	display: inline-block;
+	width: auto;
+	height: 50px;
+	border-top:3px solid white;
+	background-color:  rgba(255, 255, 255, 0.5); 
+	padding: 5px;
+	margin: 5px;
+}
+#item_bar .no_selected:hover, #item_bar .selected:hover
+{
+	border-top:3px solid rgb(144, 209, 169);
+}
+#item_bar .selected
+{
+	display: inline-block;
+	width: auto;
+	height: 50px;
+	border-top:3px solid white;
+	background-color:  rgba(144, 209, 169, 0.5); 
+	padding: 5px;
+	margin: 10px;
 }
 /* Les popups */
 .popup
@@ -213,6 +249,23 @@ button:hover
 	background-size: auto 90%;
 	background-position: center;
 }
+#popup_poignee_portiere, #popup_loquet
+{
+	background: rgba(189, 7, 7, 0.5);
+	border-top: 2px solid red;
+	border-bottom: 2px solid red;
+	color: white;
+	position: absolute;
+	top: 32%;
+	height: 30%;
+	vertical-align:middle;
+	display: table;
+}
+#popup_poignee_portiere span, #popup_loquet span
+{
+	vertical-align:middle;
+	display: table-cell;
+}
 /* intro.php*/
 #intro
 {
@@ -283,37 +336,13 @@ button:hover
 	background-size: 100% auto;
 	background-position: center; 
 }
-#item_bar
+#broken_window
 {
 	position: absolute;
-	bottom: 70px;
-	right: 50px;
-	padding: 10px;
-	margin: none;
-}
-#item_bar .no_selected
-{
-	display: inline-block;
-	width: auto;
-	height: 50px;
-	border-top:3px solid white;
-	background-color:  rgba(255, 255, 255, 0.5); 
-	padding: 5px;
-	margin: 5px;
-}
-#item_bar .no_selected:hover, #item_bar .selected:hover
-{
-	border-top:3px solid rgb(144, 209, 169);
-}
-#item_bar .selected
-{
-	display: inline-block;
-	width: auto;
-	height: 50px;
-	border-top:3px solid white;
-	background-color:  rgba(144, 209, 169, 0.5); 
-	padding: 5px;
-	margin: 10px;
+	top: 5%;
+	left: 20%;
+	width: 8%;
+	height: auto;
 }
 /* coffrefort.php */
 .serrure_coffre
