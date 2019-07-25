@@ -8,7 +8,9 @@ var loquet_audio = new Audio('../ressources/audios/loquet.mp3');
 var masse_audio = new Audio('../ressources/audios/masse.mp3');
 var bouteille_eau_audio = new Audio('../ressources/audios/avaler_eau.mp3');
 var briquet_audio = new Audio('../ressources/audios/briquet.mp3');
+var toquer_fenetre_audio = new Audio('../ressources/audios/toquer_fenetre.mp3');
 var ouverture_lettre = new Audio('../ressources/audios/ouverture_lettre.mp3');
+var explosion_voiture_audio = new Audio('../ressources/audios/explosion_voiture.mp3');
 var tableau_hitbox = [
                         [49,598,342,787],
                         [821,304,1063,606],
@@ -34,6 +36,7 @@ function click_intro(id_hitbox)
 {
     if(active_popup==false)
     {
+        if(active_item!='briquet')
         switch(id_hitbox){
             case 0:
                 if(magazine==false)
@@ -83,28 +86,55 @@ function click_intro(id_hitbox)
                 if(active_item=='masse')
                 {
                     break_window();
+                    chronoStop();
+                }
+                else if(active_item!='briquet' && active_item!='magazine')
+                {
+                    toquer_fenetre_audio.play();
+                    open_popup('popup_fenetre');
                 }
                 break;
             case 7:
-                    if(active_item=='masse')
-                    {
-                        break_window();
-                    }
+                if(active_item=='masse')
+                {
+                    break_window();
+                    chronoStop();
+                }
+                else if(active_item!='briquet' && active_item!='magazine')
+                {
+                    toquer_fenetre_audio.play();
+                    open_popup('popup_fenetre');
+                }
                 break;
             default:
                 break;
+        }
+        else if(active_item=='briquet')
+        {
+            explosion_voiture_audio.play();
+            open_popup('popup_kaboom');
+            fuite_audio.pause();
+            chronoStop();
         }
     }
 }
 
 function select_item(name_item)
 {
-    if(active_item!='none')
+    if(name_item==active_item)
     {
         document.getElementById(active_item).className = 'no_selected';
+        active_item='none'
     }
-    active_item=name_item;
-    document.getElementById(active_item).className =  'selected';
+    else 
+    {
+        if(active_item!='none')
+        {
+            document.getElementById(active_item).className = 'no_selected';
+        }
+        active_item=name_item;
+        document.getElementById(active_item).className =  'selected';
+    }
 }
 
 function break_window()

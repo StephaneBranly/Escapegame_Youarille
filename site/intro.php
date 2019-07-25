@@ -7,7 +7,10 @@
         <section id='main'>
             <div id='intro' onclick="click_intro(in_hit_box(event,tableau_hitbox,param_hb_dim_bg,false));">
                 <?php
-                    if($_GET['debut']==1)
+                    $debut=1;
+                    if(isset($_GET['debut']))
+                    {$debut=$_GET['debut'];}
+                    if($debut==1)
                     {
                         echo"<p class='popup' id='popup_intro' style=\"visibility:hidden\" onclick=\"close_popup('popup_intro');\">
                         <br/><br/><br/><img class='image_icone' src='../ressources/images/logo_integ.png' alt='Logo integ'/>

@@ -249,7 +249,7 @@ button:hover
 	background-size: auto 90%;
 	background-position: center;
 }
-#popup_poignee_portiere, #popup_loquet
+#popup_poignee_portiere, #popup_loquet, #popup_fenetre
 {
 	background: rgba(189, 7, 7, 0.5);
 	border-top: 2px solid red;
@@ -261,10 +261,21 @@ button:hover
 	vertical-align:middle;
 	display: table;
 }
-#popup_poignee_portiere span, #popup_loquet span
+#popup_poignee_portiere span, #popup_loquet span, #popup_fenetre span
 {
 	vertical-align:middle;
 	display: table-cell;
+}
+#popup_kaboom
+{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255,10,10,0.85);
+	background-image: url(../ressources/images/kaboom.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+	z-index: 100;
 }
 /* intro.php*/
 #intro
