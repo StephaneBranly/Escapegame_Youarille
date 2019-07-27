@@ -27,6 +27,12 @@ function chrono(){
     
 	document.getElementById("chronotime").innerHTML = hr + ":" + min + ":" + sec + ":" + msec;
 	timerID = setTimeout("chrono()", 10);
+	if(hr==0 && min==0 && sec==0 && msec<100)
+	{
+		chronoStop();
+		document.getElementById("chronotime").innerHTML = 0 + ":" + 00 + ":" + 00 + ":" + 000;
+		chronoFinish();
+	}
 }
 function chronoStart(nbr_min_in,nbr_sec_in,nbr_msec_in){
 	end = new Date();

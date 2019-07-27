@@ -68,23 +68,39 @@
                         <div class='msglist' style='width: auto;'>";
                         $mails= array(
                             array(1,'john.ford@utc.fr','John Ford','[av01] retour vers le turfu','08/29/2019','21 KB','12:53:24 PM CEST',
-                                    'Bonjour, <br/><br/>
-                                    n\'oubliez pas de regarder le film pour le prochain cours, 
-                                    il pourra éventuellement y avoir des questions sur ce dernier 
-                                    et nous ferons une étude des différents plans 
-                                    <br/><br/>Bonne journée,<br/>John Ford'),
+                                'Bonjour, <br/><br/>
+                                n\'oubliez pas de regarder le film pour le prochain cours, 
+                                il pourra éventuellement y avoir des questions sur ce dernier 
+                                et nous ferons une étude des différents plans 
+                                <br/><br/>Bonne journée,<br/>John Ford'),
                             array(2,'jean-marie.kastrel@utc.fr','Jean-Marie Kastrel','[tn04] liste des projets','08/24/2019','54 KB','3:27:27 PM CEST',
-                                    'Bonjour,<br/><br/>
-                                    En raison de travaux, nous avons du déplacer les projets TN04 dans mon labo personnel, cela fait que vous ne pourrez pas y accéder avant la fin septembre.<br/>
-                                    Je vous remercie d\'avance pour votre compréhension, nous faisons le maximum pour que vous puissiez continuer à travailler deçu<br/><br/>
-                                    Cordialement, Jean-Marie<br/><br/>
-                                    -------------------<br/>
-                                    Jean-Marie Kastrel<br/>
-                                    Labo 53, Rue du Dr Schweitzer, 60200 Compiègne<br/>
-                                    +33321548482'),
-                            array(3,'flandre.pause@utc.fr','Flandre Pause','[cm11] basique','05/29/2019','33 KB','7:33:12 PM CEST', 'A remplir'),
-                            array(4,'maraine.tannassy@utc.fr','Maraine Tannassy','[mt90] preparation a la premiere PLS','09/24/2018','32 KB','9:25:00 AM CEST','A remplir'),
-                            array(5,'stephane.branly@etu.utc.fr','Stéphane Branly','[youa] YOUAre the best','01/27/2019','29 KB','9:05:33 AM CEST','A remplir')
+                                'Bonjour,<br/><br/>
+                                En raison de travaux, nous avons du déplacer les projets TN04 dans mon labo personnel, cela fait que vous ne pourrez pas y accéder avant la fin septembre.<br/>
+                                Je vous remercie d\'avance pour votre compréhension, nous faisons le maximum pour que vous puissiez continuer à travailler deçu<br/><br/>
+                                Cordialement, Jean-Marie<br/><br/>
+                                -------------------<br/>
+                                Jean-Marie Kastrel<br/>
+                                Labo 53, Rue du Dr Schweitzer, 60200 Compiègne<br/>
+                                +33321548482'),
+                            array(3,'flandre.pause@utc.fr','Flandre Pause','[cm11] basique','05/29/2019','33 KB','7:33:12 PM CEST', 
+                                'Bonsoir !<br/><br/>
+                                Suite à un incident, je rappelle qu\'il est formellement interdit de boire les solutions lors des TPs ! MEME LES SOLUTIONS BASIQUES ! (simple)<br/><br/>
+                                Je compte sur vous ! (du moins ceux qui sont encore là)<br/><br/>
+                                F. Pause '),
+                            array(4,'maraine.tannassy@utc.fr','Maraine Tannassy','[mt90] preparation a la premiere PLS','09/24/2018','32 KB','9:25:00 AM CEST',
+                                'Bonjour<br/>
+                                <br/>
+                                Votre premier examen aura lieu en salle A500. Je rappelle que les calculatrices et documents sont interdits ! <br/>
+                                Une équipe de secour\'UT sera présente pour vos PLS<br/><br/>
+                                Cordialement,<br/>
+                                Maraine Tannasy'),
+                            array(5,'stephane.branly@etu.utc.fr','Stéphane Branly','[youa] YOUAre the best','01/27/2019','29 KB','9:05:33 AM CEST',
+                                'Salut Nouvo !<br/>
+                                Voici un aperçu de ta future boite mail, c\'est ici que tu recevras tes premiers résultats, que tu tchatcheras, que tu contacteras les profs et bien plus encore !<br/><br/>
+                                Je parle bien d\'un aperçu car en réalité tu es dans un escape game réalisé par un Youa ! Ca m\'a pris pas mal de temps à réfléchir aux différentes enigmes, les concevoir, les tester ! Tout retour est apprécié :) C\'est même pour toi l\'occasion de tester ta vraie boîte mail en essayant de m\'envoyer un petit mail :p (stephane.branly@etu.utc.fr).<br/><br/>
+                                Ca me fera beaucoup plaisir de vous rencontrer en vrai ! Bien sûr je compte sur toi pour devenir Youa ! (mais même si tu ne l\'es pas je t\'aimerai quand même :p)<br/><br/>
+                                A très bientôt à l\'integ ! (n\'hésite pas à venir me voir !)<br/>
+                                Stéphane')
                             );
                         
                             foreach($mails as $un_mail)

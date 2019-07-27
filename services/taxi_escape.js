@@ -11,6 +11,8 @@ var briquet_audio = new Audio('../ressources/audios/briquet.mp3');
 var toquer_fenetre_audio = new Audio('../ressources/audios/toquer_fenetre.mp3');
 var ouverture_lettre = new Audio('../ressources/audios/ouverture_lettre.mp3');
 var explosion_voiture_audio = new Audio('../ressources/audios/explosion_voiture.mp3');
+var mort_gaz_audio = new Audio('../ressources/audios/mort_gaz.mp3');
+var voix_piege_audio = new Audio('../ressources/audios/voix_piege.mp3');
 var tableau_hitbox = [
                         [49,598,342,787],
                         [821,304,1063,606],
@@ -32,6 +34,7 @@ var active_item='none';
 
 
 fuite_audio.play();
+voix_piege_audio.play();
 function click_intro(id_hitbox)
 {
     if(active_popup==false)
@@ -87,6 +90,8 @@ function click_intro(id_hitbox)
                 {
                     break_window();
                     chronoStop();
+                    open_popup('popup_fenetre_cassee_left');
+                    setTimeout(function() { document.location.href="run_escape.php"; },3000);
                 }
                 else if(active_item!='briquet' && active_item!='magazine')
                 {
@@ -99,6 +104,8 @@ function click_intro(id_hitbox)
                 {
                     break_window();
                     chronoStop();
+                    open_popup('popup_fenetre_cassee_back');
+                    setTimeout(function() { document.location.href="run_escape.php"; },3000);
                 }
                 else if(active_item!='briquet' && active_item!='magazine')
                 {
@@ -140,4 +147,10 @@ function select_item(name_item)
 function break_window()
 {
     casser_fenetre_audio.play();
+}
+
+function chronoFinish()
+{
+    open_popup('popup_faucheuse');
+    mort_gaz_audio.play();
 }

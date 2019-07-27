@@ -14,6 +14,10 @@
                 <p class='popup' id='popup_loquet' style="visibility:hidden" onclick="close_popup('popup_loquet');"><span>Je n'arrive pas à débloquer le loquet...</span></p>
                 <p class='popup' id='popup_fenetre' style="visibility:hidden" onclick="close_popup('popup_fenetre');"><span>Impossible de casser cette fenêtre à la main...</span></p>
                 <p class='popup' id='popup_kaboom' style="visibility:hidden" onclick="setTimeout(function() { document.location.href='intro.php'; }, 500);"></p>
+                <p class='popup' id='popup_faucheuse' style="visibility:hidden" onclick="setTimeout(function() { document.location.href='intro.php'; }, 500);"></p>
+                <p class='popup' id='popup_fenetre_cassee_left' style="visibility:hidden"></p>
+                <p class='popup' id='popup_fenetre_cassee_back' style="visibility:hidden"></p>
+
                 <div id='hitbox'></div>
             </div>
         </section>

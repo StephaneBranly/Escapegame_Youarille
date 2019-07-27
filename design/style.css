@@ -108,6 +108,55 @@ button:hover
 	width: 200px;
 	height: auto;
 }
+/* Design cross directions */
+#cross_directions
+{
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom:70px;
+	left:0px;
+}
+#cross_directions table
+{
+	padding: 5px;
+	text-align: center;
+	display: inline-block;
+	width: 20%;
+}
+#cross_directions table img
+{
+	display: inline-block;
+	width: 100%;
+}
+#cross_directions table #top:hover
+{
+	background-image: url(../ressources/images/cross_ts.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+#cross_directions table #down:hover
+{
+	background-image: url(../ressources/images/cross_ds.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+#cross_directions table #left:hover
+{
+	background-image: url(../ressources/images/cross_ls.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+#cross_directions table #right:hover
+{
+	background-image: url(../ressources/images/cross_rs.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
 /* Design debug Hitbox */
 .une_hitbox
 {
@@ -173,11 +222,10 @@ button:hover
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
+	z-index: 50;
 }
 #popup_intro
 {
-	height: 100%;
-	width: 100%;
 	background-color: rgba(0,0,0,0.95);
 	color: rgb(144, 209, 169);
 	-webkit-box-shadow:inset 0px 0px 0px 10px rgb(144, 209, 169);
@@ -187,15 +235,13 @@ button:hover
 }
 #popup_pika
 {
-	height: 50%;
 	background-image: url(../ressources/images/Pika_popup.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 50%;
 	background-position: center;
 }
 #popup_screen_pc
 {
-	height: 90%;
 	background-image: url(../ressources/images/Screen_PC.png);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
@@ -203,7 +249,6 @@ button:hover
 }
 #popup_tel
 {
-	height: 90%;
 	background-image: url(../ressources/images/Tel.png);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
@@ -211,7 +256,6 @@ button:hover
 }
 #popup_lettre
 {
-	height: 90%;
 	background-image: url(../ressources/images/lettre.jpg);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
@@ -219,7 +263,6 @@ button:hover
 }
 #popup_coffre
 {
-	height: 90%;
 	background-image: url(../ressources/images/masse.png);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
@@ -227,7 +270,6 @@ button:hover
 }
 #popup_portiere
 {
-	height: 90%;
 	background-image: url(../ressources/images/magazine.png);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
@@ -235,7 +277,6 @@ button:hover
 }
 #popup_repose_bras
 {
-	height: 90%;
 	background-image: url(../ressources/images/briquet.png);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
@@ -243,7 +284,6 @@ button:hover
 }
 #popup_cache_voiture
 {
-	height: 90%;
 	background-image: url(../ressources/images/bouteille_eau.png);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
@@ -268,14 +308,34 @@ button:hover
 }
 #popup_kaboom
 {
-	height: 100%;
-	width: 100%;
-	background-color: rgba(255,10,10,0.85);
+	background-color: rgba(255,10,10,0.95);
 	background-image: url(../ressources/images/kaboom.png);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
 	background-position: center;
-	z-index: 100;
+}
+#popup_faucheuse
+{
+	background-color: rgba(250,250,250,0.95);
+	background-image: url(../ressources/images/faucheuse.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_fenetre_cassee_back
+{
+	background-image: url(../ressources/images/broken_window_back.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center;
+	
+}
+#popup_fenetre_cassee_left
+{
+	background-image: url(../ressources/images/broken_window_left.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center;
 }
 /* intro.php*/
 #intro
@@ -314,6 +374,7 @@ button:hover
 	color: white;
 	transition: 0.5s all;
 	padding:10px;
+	text-decoration: none;
 }
 #taxi #address
 {
@@ -354,6 +415,13 @@ button:hover
 	left: 20%;
 	width: 8%;
 	height: auto;
+}
+/* run_escape.php */
+#run_escape
+{
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center; 
 }
 /* coffrefort.php */
 .serrure_coffre
