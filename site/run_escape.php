@@ -70,8 +70,32 @@
                                 $liens=array('','9','','');
                                 break;
                             case 11:
+                                $directions=array('visibility:hidden','','','');
+                                $liens=array('','6','14','15');
+                                break;
+                            case 12:
                                 $directions=array('visibility:hidden','','visibility:hidden','visibility:hidden');
-                                $liens=array('','6','','');
+                                $liens=array('','17','','');
+                                break;
+                            case 13:
+                                $directions=array('visibility:hidden','','visibility:hidden','visibility:hidden');
+                                $liens=array('','14','','');
+                                break;
+                            case 14:
+                                $directions=array('','','visibility:hidden','visibility:hidden');
+                                $liens=array('13','11','','');
+                                break;
+                            case 15:
+                                $directions=array('visibility:hidden','','','');
+                                $liens=array('','11','17','16');
+                                break;
+                            case 16:
+                                $directions=array('visibility:hidden','','visibility:hidden','visibility:hidden');
+                                $liens=array('','15','','');
+                                break;
+                            case 17:
+                                $directions=array('visibility:hidden','','','visibility:hidden');
+                                $liens=array('','15','12','');
                                 break;
                             default:
                                 $directions=array('','','','');
@@ -79,10 +103,10 @@
                                 //echo "<script>alert(\"Default choix\")</script>";
                                 break;
                         }
-                        echo "<tr><td></td><td><a href='run_escape.php?page=$liens[0]'><img style='$directions[0]' id='top' src='../ressources/images/cross_t.png' alt='Top'/></a></td><td></td></tr>";
-                        echo "<tr><td><a href='run_escape.php?page=$liens[2]'><img style='$directions[2]' id='left' src='../ressources/images/cross_l.png' alt='Left'/></a></td><td></td>";
-                        echo"<td><a href='run_escape.php?page=$liens[3]'><img style='$directions[3]' id='right' src='../ressources/images/cross_r.png' alt='Right'/></a></td></tr>";
-                        echo"<tr><td></td><td><a href='run_escape.php?page=$liens[1]'><img style='$directions[1]' id='down' src='../ressources/images/cross_d.png' alt='Down'/></a></td><td></td></tr>";
+                        echo "<tr><td></td><td><img onclick='document.location.href=\"run_escape.php?page=$liens[0]\";' style='$directions[0]' id='top' src='../ressources/images/cross_t.png' alt='Top'/></td><td></td></tr>";
+                        echo "<tr><td><img onclick='document.location.href=\"run_escape.php?page=$liens[2]\";' style='$directions[2]' id='left' src='../ressources/images/cross_l.png' alt='Left'/></td><td></td>";
+                        echo"<td><img onclick='document.location.href=\"run_escape.php?page=$liens[3]\";' style='$directions[3]' id='right' src='../ressources/images/cross_r.png' alt='Right'/></td></tr>";
+                        echo"<tr><td></td><td><img onclick='document.location.href=\"run_escape.php?page=$liens[1]\";' style='$directions[1]' id='down' src='../ressources/images/cross_d.png' alt='Down'/></td><td></td></tr>";
                     ?>
                 </tbody>
             </table>
@@ -92,3 +116,4 @@
 
 
 <script type="text/javascript" src="../services/general.js"></script>
+<script type="text/javascript">var courir_audio = new Audio('../ressources/audios/courir.mp3'); courir_audio.play();</script>
