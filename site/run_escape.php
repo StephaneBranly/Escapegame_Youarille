@@ -74,6 +74,8 @@
                                 $liens=array('','6','','');
                                 break;
                             default:
+                                $directions=array('','','','');
+                                $liens=array('1','1','1','1');
                                 //echo "<script>alert(\"Default choix\")</script>";
                                 break;
                         }
