@@ -43,7 +43,7 @@
 
 <div class="extras">
 
- <a href="PC_mdp_oublie.php" class="light" title="Forgot your password?">Forgot your password?</a>
+ <a href="pc_mdp_oublie.php" class="light" title="Forgot your password?">Forgot your password?</a>
 </div>
 
 </form>

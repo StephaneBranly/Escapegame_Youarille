@@ -235,21 +235,21 @@ button:hover
 }
 #popup_pika
 {
-	background-image: url(../ressources/images/Pika_popup.png);
+	background-image: url(../ressources/images/pika_popup.png);
 	background-repeat: no-repeat;
 	background-size: auto 50%;
 	background-position: center;
 }
 #popup_screen_pc
 {
-	background-image: url(../ressources/images/Screen_PC.png);
+	background-image: url(../ressources/images/screen_pc.png);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
 	background-position: center;
 }
 #popup_tel
 {
-	background-image: url(../ressources/images/Tel.png);
+	background-image: url(../ressources/images/tel.png);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
 	background-position: center;
@@ -292,12 +292,10 @@ button:hover
 #popup_poignee_portiere, #popup_loquet, #popup_fenetre
 {
 	background: rgba(189, 7, 7, 0.5);
-	border-top: 2px solid red;
-	border-bottom: 2px solid red;
 	color: white;
 	position: absolute;
-	top: 32%;
-	height: 30%;
+	top: 0px;
+	height: 100%;
 	vertical-align:middle;
 	display: table;
 }
@@ -340,7 +338,7 @@ button:hover
 /* intro.php*/
 #intro
 {
-	background-image: url(../ressources/images/Intro_bg.png);
+	background-image: url(../ressources/images/intro_bg.png);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center; 
@@ -366,7 +364,7 @@ button:hover
 	width: 50%;
 	border: 2px solid grey;
 }
-#taxi .submit_button
+#taxi .submit_button, #run_escape .submit_button
 {
 	font-family: 'atwriter','VCR','Postface', Arial, sans-serif;
 	background: rgba(189, 186, 7, 0.5);
@@ -385,13 +383,14 @@ button:hover
 	width: 90%;
 	color: white;
 }
-#taxi .submit_button:hover
+#taxi .submit_button:hover, #run_escape .submit_button:hover
 {
 	background: rgba(7, 189, 16, 0.5);
 	border: solid 2px rgb(0, 230, 12);
 	cursor: pointer;
+	text-decoration: none;
 }
-#taxi #reponse
+#taxi #reponse, #run_escape #reponse
 {
 	background: rgba(189, 7, 7, 0.5);
 	border: solid 2px rgb(230, 0, 0);
@@ -399,6 +398,11 @@ button:hover
 	margin: 20px;
 	padding:10px;
 	color: white;
+	text-decoration: none;
+}
+#taxi #reponse a, #run_escape #reponse a
+{
+	text-decoration: none;
 }
 /* taxi_escape.php */
 #taxi_escape
@@ -433,4 +437,18 @@ button:hover
 #les_serrures_coffre
 {
 	background-image: url('../ressources/images/metal_pale.jpg');
+}
+
+
+/* EN travaux */
+#travaux
+{
+	background-color: rgb(250, 100, 30);
+	text-align: center;
+}
+#travaux img
+{
+	display: inline;
+	height: 10%;
+	width: auto;
 }

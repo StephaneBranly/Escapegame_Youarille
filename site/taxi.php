@@ -18,7 +18,7 @@
                         {
                             if($_POST['address']=='Labo 53, Rue du Dr Schweitzer, 60200 Compiègne')
                             {
-                                echo "<div id='Reponse'>Ah encore, vous êtes sûr d'y aller ? <a href='taxi_escape.php'><input  type='submit' class='submit_button' value=\"C'est parti\"></a></div>";
+                                echo "<div id='reponse'>Ah encore, vous êtes sûr d'y aller ? <a href='taxi_escape.php'><input  type='submit' class='submit_button' value=\"C'est parti\"></a></div>";
                                 echo " <script type='text/javascript'>var here_we_go_again = new Audio('../ressources/audios/here_we_go_again.mp3');
                                 here_we_go_again.play(); </script>
                                 ";

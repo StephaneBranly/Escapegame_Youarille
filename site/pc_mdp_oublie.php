@@ -30,7 +30,7 @@
     }
 ?>
 <div class="extras">
- <a href="PC_accueil.php" class="light" title="Back to homepage">Back to homepage</a>
+ <a href="pc_accueil.php" class="light" title="Back to homepage">Back to homepage</a>
 </div>
 </form>
 </div>
