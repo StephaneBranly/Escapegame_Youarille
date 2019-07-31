@@ -5,7 +5,7 @@ var ramasser_objet_audio = new Audio('../ressources/audios/ramasser_objet.mp3');
 var param_hb_dim_bg = [1600,900];
 
 var tableau_hitbox = [
-    [1133,401,1315,820],
+    [1151,415,1297,843],
     [962,688,1107,791]
     ];
 

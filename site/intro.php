@@ -19,10 +19,9 @@
                         <br/>Nous espérons que ce petit escape game te plaira ! <br/><br/>
                         <br/>N'hésite pas à contacter @stephane_branly si tu es bloqué
                         <br/>Codé avec amour par Stéphane BRANLY tu l'auras compris!
-                        <br/><br/>(Le but de ce mini escape game est de proposer du contenu divertissant aux nouvös de l'UTC, j'ai conscience que cet escape game n'est pas parfait (optimisé pour PC, sur Mozilla))
-                        <br/>(il ne faut pas réactualiser la page sinon la progression sera entièrement perdue)
-                        <br/><br><br/><br/>N'hésite pas à intéragir avec le décor, et à chercher des informations sur internet si tu l'estimes nécessaire !
-                        <br/><br/><br/><br/>GOOD LUCK ! Ton temps est compté mouahahah
+                        <br/><br/>Je te conseille de mettre du son, faire F11 pour avoir le plein écran et de jouer sur PC (ne pas rafraichir la page sinon la progression sera perdue) !
+                        <br/>Je sais que l'escape game n'est pas parfait, mais le principal c'est de s'amuser ;)
+                        <br/><br/>GOOD LUCK ! Ton temps est compté mouahahah
                         </p>";
                     }
                 ?>

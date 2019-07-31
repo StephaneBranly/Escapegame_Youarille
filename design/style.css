@@ -459,6 +459,14 @@ button:hover
 	background-size: 100% auto;
 	background-position: center; 
 }
+/* guillaumat.php */
+#guillaumat
+{
+	background-image: url('../ressources/images/guillaumat_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center; 
+}
 /* coffrefort.php */
 .serrure_coffre
 {

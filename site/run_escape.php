@@ -80,7 +80,7 @@
                         if($badge==1)
                         {
                             echo "<input type='submit' class='submit_button' 
-                            onclick=\"setTimeout(function() { document.location.href='en_travaux.php'; }, 1000); 
+                            onclick=\"setTimeout(function() { document.location.href='guillaumat.php'; }, 1000); 
                             var bip_bon=new Audio('../ressources/audios/bip_bon.mp3');
                             bip_bon.play();\" 
                             value=\"Rentrer\"></div>";
