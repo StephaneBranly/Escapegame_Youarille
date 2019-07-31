@@ -17,7 +17,6 @@
                 <p class='popup' id='popup_faucheuse' style="visibility:hidden" onclick="setTimeout(function() { document.location.href='intro.php'; }, 500);"></p>
                 <p class='popup' id='popup_fenetre_cassee_left' style="visibility:hidden"></p>
                 <p class='popup' id='popup_fenetre_cassee_back' style="visibility:hidden"></p>
-
                 <div id='hitbox'></div>
             </div>
         </section>

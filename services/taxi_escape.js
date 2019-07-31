@@ -1,6 +1,3 @@
-//var son_tel = new Audio('../ressources/audios/son_telephone.mp3');
-//repeat_tel = setInterval("son_tel.play();", 6000);
-
 var fuite_audio = new Audio('../ressources/audios/fuite.mp3');
 var casser_fenetre_audio = new Audio('../ressources/audios/casser_fenetre.mp3');
 var poignee_portiere_audio = new Audio('../ressources/audios/poignee_portiere.mp3');
