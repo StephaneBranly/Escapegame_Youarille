@@ -4,8 +4,9 @@
 	<meta charset="UTF-8">
 </head>
 
-<body onmousemove="avoircoordonnees(event);">
+<body id='coffre_fort'>
 	<section id='main'>
+        <a href='labo53.php'><p class='fleche fleche_left' title='Retourner au labo'></p></a>
         <div id='les_serrures_coffre'>
             <img onDragStart="return false" onmousemove="tourner_serrure(event,0);" id='serrure0' class='serrure_coffre' src='../ressources/images/Serrure_coffre_fort.png'/>
             <img onDragStart="return false" onmousemove="tourner_serrure(event,1);" id='serrure1' class='serrure_coffre' src='../ressources/images/Serrure_coffre_fort.png'/>
@@ -14,15 +15,52 @@
         </div>
     </section>
     <section id='text_section'>
-        <p id='coord'>Coordonnées : x ; y </p>
-        <form>
-            <input type='number' id='angle0'/>
-            <input type='number' id='angle1'/>
-            <input type='number' id='angle2'/>
-            <input type='number' id='angle3'/>
+        <form action="coffrefort.php" method="post" >
+            <input style="visibility:hidden; display:none;" type='number' id='angle0' name='angle0'/>
+            <input style="visibility:hidden; display:none;" type='number' id='angle1' name='angle1'/>
+            <input style="visibility:hidden; display:none;" type='number' id='angle2' name='angle2'/>
+            <input style="visibility:hidden; display:none;" type='number' id='angle3' name='angle3'/>
+            <input class="submit_button" name="login_button" value="Essayer d'ouvrir" type="submit">
         </form>
     </section>
     
+    <?php
+        $angle0=0; /* Decodage des angles en nombre*/
+        $angle1=0;
+        $angle2=0;
+        $angle3=0;
+        if(isset($_POST['angle0']))
+            {$angle0=$_POST['angle0'];}
+        if(isset($_POST['angle1']))
+            {$angle1=$_POST['angle1'];}
+        if(isset($_POST['angle2']))
+            {$angle2=$_POST['angle2'];}
+        if(isset($_POST['angle3']))
+            {$angle3=$_POST['angle3'];}
+
+        if($angle0<0)
+        {$angle0=-$angle0;}
+        else
+        {$angle0=180+(180-$angle0);}
+        if($angle1<0)
+        {$angle1=-$angle1;}
+        else
+        {$angle1=180+(180-$angle1);}
+        if($angle2<0)
+        {$angle2=-$angle2;}
+        else
+        {$angle2=180+(180-$angle2);}
+        if($angle3<0)
+        {$angle3=-$angle3;}
+        else
+        {$angle3=180+(180-$angle3);}
+        $number0=round(($angle0)/36);
+        $number1=round(($angle1)/36);
+        $number2=round(($angle2)/36);
+        $number3=round(($angle3)/36);
+        /*echo "<script>alert(\"$angle0 , $angle1 , $angle2 , $angle3\")</script>";
+        echo "<script>alert(\"$number0 , $number1 , $number2 , $number3\")</script>";*/
+    ?>
 </body>
 </html>
 

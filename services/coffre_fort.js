@@ -48,8 +48,6 @@ function mettre_a_jour_angle(name_serrure,ref)
     var values = tr.split('(')[1].split(')')[0].split(',');
     var a = values[0];
     var b = values[1];
-    var c = values[2];
-    var d = values[3];
 
     var scale = Math.sqrt(a*a + b*b);
 

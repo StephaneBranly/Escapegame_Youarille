@@ -372,7 +372,7 @@ button:hover
 	width: 50%;
 	border: 2px solid grey;
 }
-#taxi .submit_button, #run_escape .submit_button
+#taxi .submit_button, #run_escape .submit_button, #coffre_fort .submit_button
 {
 	font-family: 'atwriter','VCR','Postface', Arial, sans-serif;
 	background: rgba(189, 186, 7, 0.5);
@@ -391,7 +391,7 @@ button:hover
 	width: 90%;
 	color: white;
 }
-#taxi .submit_button:hover, #run_escape .submit_button:hover
+#taxi .submit_button:hover, #run_escape .submit_button:hover, #coffre_fort .submit_button:hover
 {
 	background: rgba(7, 189, 16, 0.5);
 	border: solid 2px rgb(0, 230, 12);
@@ -463,6 +463,14 @@ button:hover
 #guillaumat
 {
 	background-image: url('../ressources/images/guillaumat_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center; 
+}
+/* labo53.php */
+#labo53
+{
+	background-image: url('../ressources/images/laboratoire_bg.png');
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center; 
