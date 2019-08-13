@@ -34,7 +34,7 @@
             </div>
         </section>
         <section id='text_section'>
-            <p class='typewriter'>Intéragissez avec le décor</p>
+            <p class='typewriter'>Vendetta, intéragissez avec le décor</p>
         </section> 
     </body>
 </html>

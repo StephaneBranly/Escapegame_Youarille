@@ -10,7 +10,7 @@
             </div>
         </section>
         <section id='text_section'>
-            <p class='typewriter'>Trouve le labo 53</p>
+            <p class='typewriter'>Trouve le labo 53, proche de 3 toilettes et au centre...</p>
         </section>
     </body>
 </html>

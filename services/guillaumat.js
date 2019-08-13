@@ -1,5 +1,3 @@
-var yo_audio = new Audio('../ressources/audios/yo.mp3');
-
 var param_hb_dim_bg = [1600,900];
 
 var tableau_hitbox = [
@@ -20,8 +18,7 @@ function click_intro(id_hitbox)
     {
         if(id_hitbox>=0 && id_hitbox<=7)
         {
-            yo_audio.play();
-            setTimeout(function() { document.location.href="en_travaux.php"; },300);
+            setTimeout(function() { document.location.href="labo53.php"; },300);
         }
     }
 }

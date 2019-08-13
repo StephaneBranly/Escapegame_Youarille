@@ -19,7 +19,7 @@
         {
             $user=$_GET['user'];
         }
-        if(preg_match('/[Qq]ueue(.|)de(.|)[Ff]er/',$mdp) && $user=='Vendetta')
+        if(preg_match('/[Qq]ueue(.|)de(.|)[Ff]er/',$mdp) && preg_match('/[Vv]endetta/',$user))
         {
     echo"<html lang='en-US'>
     <head>
@@ -76,7 +76,7 @@
                             array(2,'jean-marie.kastrel@utc.fr','Jean-Marie Kastrel','[tn04] liste des projets','08/24/2019','54 KB','3:27:27 PM CEST',
                                 'Bonjour,<br/><br/>
                                 En raison de travaux, nous avons du déplacer les projets TN04 dans mon labo personnel, cela fait que vous ne pourrez pas y accéder avant la fin septembre.<br/>
-                                Je vous remercie d\'avance pour votre compréhension, nous faisons le maximum pour que vous puissiez continuer à travailler deçu<br/><br/>
+                                Je vous remercie d\'avance pour votre compréhension, nous faisons le maximum pour que vous puissiez continuer à travailler dessus<br/><br/>
                                 Cordialement, Jean-Marie<br/><br/>
                                 -------------------<br/>
                                 Jean-Marie Kastrel<br/>

@@ -16,7 +16,7 @@
                     <?php
                         if(isset($_POST['address']))
                         {
-                            if($_POST['address']=='Labo 53, Rue du Dr Schweitzer, 60200 Compiègne')
+                            if(strpos($_POST['address'], "Labo 53") !== FALSE)
                             {
                                 echo "<div id='reponse'>Ah encore, vous êtes sûr d'y aller ? <a href='taxi_escape.php'><input  type='submit' class='submit_button' value=\"C'est parti\"></a></div>";
                                 echo " <script type='text/javascript'>var here_we_go_again = new Audio('../ressources/audios/here_we_go_again.mp3');
@@ -28,7 +28,7 @@
                                 $excuse = array("Mince, je n'arrive pas à trouver cette adresse...",
                                 "Je crois que cette adresse n'existe pas...",
                                 "Il n'y a pas cette adresse dans Compicity",
-                                "Vous êtes sûr de l'adresse ?! C'est à 450km !",
+                                "Vous êtes sûr de l'adresse ?!",
                                 "Vous devriez vérifier l'adresse");
                                 $rand_excuse = array_rand($excuse, 1);
                                 echo "<div id='reponse'>$excuse[$rand_excuse]</div>";

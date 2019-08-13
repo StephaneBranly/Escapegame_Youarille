@@ -19,7 +19,7 @@
 <?php
     if(isset($_POST['horde_user']))
     {
-        if($_POST['horde_user']=='Vendetta')
+        if(preg_match('/[Vv]endetta/',$_POST['horde_user']))
         {
             echo "<div class='extras'>Help: première attaque pikachu</div>";
         }
