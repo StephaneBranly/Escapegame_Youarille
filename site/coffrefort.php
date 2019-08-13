@@ -29,14 +29,15 @@
         $angle1=0;
         $angle2=0;
         $angle3=0;
+        $tenter=0;
         if(isset($_POST['angle0']))
-            {$angle0=$_POST['angle0'];}
+            {$angle0=$_POST['angle0'];$tenter=1;}
         if(isset($_POST['angle1']))
-            {$angle1=$_POST['angle1'];}
+            {$angle1=$_POST['angle1'];$tenter=1;}
         if(isset($_POST['angle2']))
-            {$angle2=$_POST['angle2'];}
+            {$angle2=$_POST['angle2'];$tenter=1;}
         if(isset($_POST['angle3']))
-            {$angle3=$_POST['angle3'];}
+            {$angle3=$_POST['angle3'];$tenter=1;}
 
         if($angle0<0)
         {$angle0=-$angle0;}
@@ -58,8 +59,22 @@
         $number1=round(($angle1)/36);
         $number2=round(($angle2)/36);
         $number3=round(($angle3)/36);
-        /*echo "<script>alert(\"$angle0 , $angle1 , $angle2 , $angle3\")</script>";
-        echo "<script>alert(\"$number0 , $number1 , $number2 , $number3\")</script>";*/
+        /*echo "<script>alert(\"$angle0 , $angle1 , $angle2 , $angle3\")</script>";*/
+        echo "<script>alert(\"$number0 , $number1 , $number2 , $number3\")</script>";
+
+        if($tenter==1)
+        {
+            if($number0==2 && $number1 ==8 && $number2==4 && $number3 == 3)
+            {
+                echo " <script type='text/javascript'>var ouverture_coffre_audio = new Audio('../ressources/audios/ouverture_coffre.mp3');
+                ouverture_coffre_audio.play(); </script>";
+            }
+            else
+            {
+                echo " <script type='text/javascript'>var coffre_bloque_audio = new Audio('../ressources/audios/coffre_bloque.mp3');
+                coffre_bloque_audio.play(); </script>";
+            }
+        }
     ?>
 </body>
 </html>

@@ -1,3 +1,9 @@
+var carton_audio = new Audio('../ressources/audios/carton.mp3');
+var clavier_audio = new Audio('../ressources/audios/clavier.mp3');
+var pc_ecran_audio = new Audio('../ressources/audios/pc_ecran.mp3');
+var poubelle_audio = new Audio('../ressources/audios/poubelle.mp3');
+var tiroir_audio = new Audio('../ressources/audios/tiroir.mp3');
+
 var param_hb_dim_bg = [1500,844];
 
 var tableau_hitbox = [
@@ -25,9 +31,42 @@ function click_intro(id_hitbox)
 {
     if(active_popup==false)
     {
-        if(id_hitbox>=0 && id_hitbox<=7)
-        {
-            setTimeout(function() { document.location.href="labo53.php"; },300);
+        switch(id_hitbox){
+            case 0:
+                pc_ecran_audio.play();
+                break;
+            case 1:
+                clavier_audio.play();
+                break;
+            case 2:
+                poubelle_audio.play();
+                break;
+            case 3:
+                tiroir_audio.play();
+                break;
+            case 4:
+                tiroir_audio.play();
+                break;
+            case 5:
+                tiroir_audio.play();
+                break;
+            case 6:
+                carton_audio.play();
+                break;
+            case 11:
+                carton_audio.play();
+                break;
+            case 12:
+                carton_audio.play();
+                break;
+            case 15:
+                carton_audio.play();
+                break;
+            case 16:
+                tiroir_audio.play();
+                break;
+            default:
+                break;
         }
     }
 }
