@@ -290,7 +290,7 @@ button:hover
 	background-size: auto 90%;
 	background-position: center;
 }
-#popup_poignee_portiere, #popup_loquet, #popup_fenetre, #popup_badge_faux
+#popup_poignee_portiere, #popup_loquet, #popup_fenetre, #popup_badge_faux, #popup_tiroir_ferme, #popup_salete
 {
 	background: rgba(189, 7, 7, 0.5);
 	color: white;
@@ -300,7 +300,17 @@ button:hover
 	vertical-align:middle;
 	display: table;
 }
-#popup_poignee_portiere span, #popup_loquet span, #popup_fenetre span, #popup_badge_faux span
+#popup_ecran_binaire
+{
+	background: rgba(0, 0, 0, 0.932);
+	color: rgb(0, 255, 0);
+	position: absolute;
+	top: 0px;
+	height: 100%;
+	vertical-align:middle;
+	display: table;
+}
+#popup_poignee_portiere span, #popup_loquet span, #popup_fenetre span, #popup_badge_faux span, #popup_tiroir_ferme span, #popup_ecran_binaire span, #popup_salete span
 {
 	vertical-align:middle;
 	display: table-cell;
@@ -339,6 +349,83 @@ button:hover
 #popup_badge
 {
 	background-image: url(../ressources/images/badge.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_clefs
+{
+	background-image: url(../ressources/images/clefs.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_papier_froisse
+{
+	background-image: url(../ressources/images/papier_froisse.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_preservatif
+{
+	background-image: url(../ressources/images/preservatif.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_postit
+{
+	background-image: url(../ressources/images/postit.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_boite_gants
+{
+	background-image: url(../ressources/images/boite_gants.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_oscillo
+{
+	background-image: url(../ressources/images/oscillo.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_manette
+{
+	background-image: url(../ressources/images/manette.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_des
+{
+	background-image: url(../ressources/images/des.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_tournevis
+{
+	background-image: url(../ressources/images/tournevis.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_ardoise
+{
+	background-image: url(../ressources/images/ardoise.png);
+	background-repeat: no-repeat;
+	background-size: auto 90%;
+	background-position: center;
+}
+#popup_bobine
+{
+	background-image: url(../ressources/images/bobine.png);
 	background-repeat: no-repeat;
 	background-size: auto 90%;
 	background-position: center;
@@ -486,8 +573,31 @@ button:hover
 {
 	background-image: url('../ressources/images/metal_pale.jpg');
 }
+/* coffrefort_interieur.php */
+#coffre_fort_interieur
+{
+	background-image: url('../ressources/images/coffre_interieur_bg.png');
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: center; 
+}
 
-
+#message_centre
+{
+	background-color: rgba(0,0,0,0.95);
+	color: rgb(144, 209, 169);
+	-webkit-box-shadow:inset 0px 0px 0px 10px rgb(144, 209, 169);
+    -moz-box-shadow:inset 0px 0px 0px 10px rgb(144, 209, 169);
+    box-shadow:inset 0px 0px 0px 10px rgb(144, 209, 169);
+	height: 100%;
+	vertical-align:middle;
+	display: table;
+}
+#message_centre span
+{
+	vertical-align: middle;
+	display: table-cell;
+}
 /* EN travaux */
 #travaux
 {

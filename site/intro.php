@@ -17,11 +17,11 @@
                         <img class='image_icone' src='../ressources/images/logo_youa.png' alt='Logo youa'/>
                         <br/><br/>Bienvenue futur Youa !<br/>
                         <br/>Nous espérons que ce petit escape game te plaira ! <br/><br/>
-                        <br/>N'hésite pas à contacter @stephane_branly si tu es bloqué
+                        <br/>N'hésite pas à contacter @stephane_branly (Twitter, Insta, Facebook) ou Sire Youarille (Facebook) si tu es bloqué
                         <br/>Codé avec amour par Stéphane BRANLY tu l'auras compris!
                         <br/><br/>Je te conseille de mettre du son, faire F11 pour avoir le plein écran et de jouer sur PC (ne pas rafraichir la page sinon la progression sera perdue) !
                         <br/>Je sais que l'escape game n'est pas parfait, mais le principal c'est de s'amuser ;)
-                        <br/><br/>GOOD LUCK ! Ton temps est compté mouahahah
+                        <br/><br/>GOOD LUCK !
                         </p>";
                     }
                 ?>

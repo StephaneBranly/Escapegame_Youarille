@@ -14,15 +14,6 @@
             <img onDragStart="return false" onmousemove="tourner_serrure(event,3);" id='serrure3' class='serrure_coffre' src='../ressources/images/Serrure_coffre_fort.png'/>
         </div>
     </section>
-    <section id='text_section'>
-        <form action="coffrefort.php" method="post" >
-            <input style="visibility:hidden; display:none;" type='number' id='angle0' name='angle0'/>
-            <input style="visibility:hidden; display:none;" type='number' id='angle1' name='angle1'/>
-            <input style="visibility:hidden; display:none;" type='number' id='angle2' name='angle2'/>
-            <input style="visibility:hidden; display:none;" type='number' id='angle3' name='angle3'/>
-            <input class="submit_button" name="login_button" value="Essayer d'ouvrir" type="submit">
-        </form>
-    </section>
     
     <?php
         $angle0=0; /* Decodage des angles en nombre*/
@@ -60,21 +51,31 @@
         $number2=round(($angle2)/36);
         $number3=round(($angle3)/36);
         /*echo "<script>alert(\"$angle0 , $angle1 , $angle2 , $angle3\")</script>";*/
-        echo "<script>alert(\"$number0 , $number1 , $number2 , $number3\")</script>";
-
+        /*echo "<script>alert(\"$number0 , $number1 , $number2 , $number3\")</script>";*/
+        echo "<section id='text_section'>
+                <form action='coffrefort.php' method='post' >
+                    <input style='visibility:hidden; display:none;' type='number' id='angle0' name='angle0'/>
+                    <input style='visibility:hidden; display:none;' type='number' id='angle1' name='angle1'/>
+                    <input style='visibility:hidden; display:none;' type='number' id='angle2' name='angle2'/>
+                    <input style='visibility:hidden; display:none;' type='number' id='angle3' name='angle3'/>
+                    <input class='submit_button' name='login_button' value=\"Essayer d'ouvrir\" type='submit'>
+                </form>";
+            
         if($tenter==1)
         {
             if($number0==2 && $number1 ==8 && $number2==4 && $number3 == 3)
             {
                 echo " <script type='text/javascript'>var ouverture_coffre_audio = new Audio('../ressources/audios/ouverture_coffre.mp3');
-                ouverture_coffre_audio.play(); </script>";
+                ouverture_coffre_audio.play(); setTimeout(function() { document.location.href='coffrefort_interieur.php'; },3000); </script>";
             }
             else
             {
                 echo " <script type='text/javascript'>var coffre_bloque_audio = new Audio('../ressources/audios/coffre_bloque.mp3');
                 coffre_bloque_audio.play(); </script>";
+                echo "Il me semble que le code n'est pas le bon...";
             }
         }
+        echo "</section>";
     ?>
 </body>
 </html>
