@@ -13,7 +13,7 @@
                         Pour cela, joins-toi avec nous chez les Youas pour que l'on unisse nos forces afin de le retrouver !<br/>
                         Ensemble, je suis sûr qu'on y arrivera ! <br/> Viens nous rencontrer lors de la pré-integ Youa le 1er Septembre à Compiègne !<br/>
                         <br/>Pour plus d'informations, ajoute Sire Youarille sur Facebook et suit les publications sur Intégration UTC et Alain Tégration !<br/><br/>
-                        On compte sur toi pour être la nouvö !
+                        On compte sur toi pour être la nouvö !<br/><br/>Merci et félicitations pour avoir terminé cet escape game !
         </div>
     </section>
 </body>

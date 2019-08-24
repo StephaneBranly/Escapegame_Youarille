@@ -52,7 +52,7 @@
         $number3=round(($angle3)/36);
         /*echo "<script>alert(\"$angle0 , $angle1 , $angle2 , $angle3\")</script>";*/
         /*echo "<script>alert(\"$number0 , $number1 , $number2 , $number3\")</script>";*/
-        echo "<section id='text_section'>
+        echo "<section id='text_section'>Tourne les curseurs ! 
                 <form action='coffrefort.php' method='post' >
                     <input style='visibility:hidden; display:none;' type='number' id='angle0' name='angle0'/>
                     <input style='visibility:hidden; display:none;' type='number' id='angle1' name='angle1'/>
