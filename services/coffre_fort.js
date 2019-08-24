@@ -2,7 +2,7 @@ var status_clic = false;
 var coord_init=[0,0];
 var coord_act=[0,0];
 var coord_middle=[get_middle_pos('serrure0'),get_middle_pos('serrure1'),get_middle_pos('serrure2'),get_middle_pos('serrure3')];
-var angles_serrures=[0,0,0,0]
+
 
 var son_tic = new Audio('../ressources/audios/Tic_serrure.mp3');
 
