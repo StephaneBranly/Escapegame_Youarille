@@ -5,6 +5,15 @@
 ?>
 <html>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src='https://www.googletagmanager.com/gtag/js?id=UA-52252996-3'></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-52252996-3');
+	</script>
         <link href="../design/style.css" rel="stylesheet" media="all" type="text/css">
         <meta charset="UTF-8">
     </head>

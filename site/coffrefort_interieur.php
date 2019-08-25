@@ -4,6 +4,15 @@
 ?>
 <html>
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src='https://www.googletagmanager.com/gtag/js?id=UA-52252996-3'></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-52252996-3');
+	</script>
 	<link href="../design/style.css" rel="stylesheet" media="all" type="text/css">
 	<meta charset="UTF-8">
 </head>
@@ -35,10 +44,10 @@
                                 $time_start=$_SESSION['time_start'];
                                 $time_end = microtime_float();
                                 $time = $time_end - $time_start;
-    
-                                echo  "Terminé en $time secondes";
+                                $minutes=round($time/60, 0);
+                                $secondes=$time%60;
+                                echo  ">>> Terminé en $minutes minute(s) et $secondes seconde(s) <<<";
                             }
-                           
                             ?>
         </div>
     </section>

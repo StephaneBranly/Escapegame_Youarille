@@ -4,6 +4,15 @@
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
 <html lang="en-US"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src='https://www.googletagmanager.com/gtag/js?id=UA-52252996-3'></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-52252996-3');
+	</script>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
       <link href="../design/style_pc.css" rel="stylesheet" type="text/css"> 
  </head>
