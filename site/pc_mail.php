@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION["page_actu"]="pc_mail.php";
+?>
 <!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'DTD/xhtml1-transitional.dtd'>
 
     <?php

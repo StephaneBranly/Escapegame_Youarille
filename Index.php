@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 	<link href="./design/style.css" rel="stylesheet" media="all" type="text/css">
@@ -5,9 +8,20 @@
     <head>
         <title>Youarille Escape Game - UTC</title>
         <meta charset="UTF-8">
-    </head>
+	</head>
+	
 	<frameset COLS = "100%" ROWS="auto">
-		<frame src="./site/intro.php?debut=1" name="game">
+		<?php 
+			if(isset($_SESSION["page_actu"]))
+			{
+				$derniere_page=$_SESSION["page_actu"];
+			}
+			else
+			{
+				$derniere_page="intro.php?debut=1";
+			}
+			echo "<frame src='./site/$derniere_page' name='game'>";
+		?>
 	</frameset>
 </html>
 

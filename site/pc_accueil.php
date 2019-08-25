@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION["page_actu"]="pc_accueil.php";
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "DTD/xhtml1-transitional.dtd">
 <html lang="en-US"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">

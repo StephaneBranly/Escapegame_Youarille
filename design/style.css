@@ -562,6 +562,14 @@ button:hover
 	background-size: 100% auto;
 	background-position: center; 
 }
+.quitter_croix
+{
+	float: left;
+	display: inline-block;
+	margin: 30px;
+	height: 30px;
+	width: auto;
+}
 /* coffrefort.php */
 .serrure_coffre
 {

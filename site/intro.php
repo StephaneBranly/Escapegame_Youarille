@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION["page_actu"]="intro.php";
+?>
 <html>
     <head>
         <link href="../design/style.css" rel="stylesheet" media="all" type="text/css">
@@ -19,9 +23,9 @@
                         <br/>Nous espérons que ce petit escape game te plaira ! <br/><br/>
                         <br/>N'hésite pas à contacter @stephane_branly (Twitter, Insta, Facebook) ou Sire Youarille (Facebook) si tu es bloqué
                         <br/>Codé avec amour par Stéphane BRANLY tu l'auras compris!
-                        <br/><br/>Je te conseille de mettre du son, faire F11 pour avoir le plein écran et de jouer sur PC (ne pas rafraichir la page sinon la progression sera perdue) !
+                        <br/><br/>Je te conseille de mettre du son, faire F11 pour avoir le plein écran et de jouer sur PC (il faut éviter de rafraichir la page au risque de perdre la progression) !
                         <br/>Je sais que l'escape game n'est pas parfait, mais le principal c'est de s'amuser ;)
-                        <br/><br/>GOOD LUCK !<br/><br/><br/><br/>v1.0.1
+                        <br/><br/>GOOD LUCK !<br/><br/><br/><br/>v1.0.2
                         </p>";
                     }
                 ?>

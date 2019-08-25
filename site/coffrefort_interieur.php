@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $_SESSION["page_actu"]="coffrefort_interieur.php";
+?>
 <html>
 <head>
 	<link href="../design/style.css" rel="stylesheet" media="all" type="text/css">

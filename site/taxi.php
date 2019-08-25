@@ -1,5 +1,8 @@
-<html>
-    <head>
+<?php
+    session_start();
+    $_SESSION["page_actu"]="taxi.php.php";
+?>
+<head>
         <link href="../design/style.css" rel="stylesheet" media="all" type="text/css">
         <meta charset="UTF-8">
     </head>
