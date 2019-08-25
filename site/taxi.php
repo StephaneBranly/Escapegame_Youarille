@@ -48,7 +48,7 @@
                         }
                     ?>
                 </div>
-                <a href='intro.php?debut=0'><p class='fleche fleche_left' title='Rentrer au studio'></p></a>
+                <a href='intro.php'><p class='fleche fleche_left' title='Rentrer au studio'></p></a>
             </div>
         </section>
     </body>

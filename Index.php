@@ -18,7 +18,7 @@
 			}
 			else
 			{
-				$derniere_page="intro.php?debut=1";
+				$derniere_page="intro.php";
 			}
 			echo "<frame src='./site/$derniere_page' name='game'>";
 		?>

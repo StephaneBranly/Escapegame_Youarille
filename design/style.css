@@ -259,35 +259,35 @@ button:hover
 {
 	background-image: url(../ressources/images/lettre.jpg);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 60%;
 	background-position: center;
 }
 #popup_coffre
 {
 	background-image: url(../ressources/images/masse.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: 50% auto;
 	background-position: center;
 }
 #popup_portiere
 {
 	background-image: url(../ressources/images/magazine.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 60%;
 	background-position: center;
 }
 #popup_repose_bras
 {
 	background-image: url(../ressources/images/briquet.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 60%;
 	background-position: center;
 }
 #popup_cache_voiture
 {
 	background-image: url(../ressources/images/bouteille_eau.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 70%;
 	background-position: center;
 }
 #popup_poignee_portiere, #popup_loquet, #popup_fenetre, #popup_badge_faux, #popup_tiroir_ferme, #popup_salete
@@ -350,84 +350,84 @@ button:hover
 {
 	background-image: url(../ressources/images/badge.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: 60% auto;
 	background-position: center;
 }
 #popup_clefs
 {
 	background-image: url(../ressources/images/clefs.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: 40% auto;
 	background-position: center;
 }
 #popup_papier_froisse
 {
 	background-image: url(../ressources/images/papier_froisse.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 70%;
 	background-position: center;
 }
 #popup_preservatif
 {
 	background-image: url(../ressources/images/preservatif.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 50%;
 	background-position: center;
 }
 #popup_postit
 {
 	background-image: url(../ressources/images/postit.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 80%;
 	background-position: center;
 }
 #popup_boite_gants
 {
 	background-image: url(../ressources/images/boite_gants.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 60%;
 	background-position: center;
 }
 #popup_oscillo
 {
 	background-image: url(../ressources/images/oscillo.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 50%;
 	background-position: center;
 }
 #popup_manette
 {
 	background-image: url(../ressources/images/manette.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 50%;
 	background-position: center;
 }
 #popup_des
 {
 	background-image: url(../ressources/images/des.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 50%;
 	background-position: center;
 }
 #popup_tournevis
 {
 	background-image: url(../ressources/images/tournevis.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 50%;
 	background-position: center;
 }
 #popup_ardoise
 {
 	background-image: url(../ressources/images/ardoise.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 60%;
 	background-position: center;
 }
 #popup_bobine
 {
 	background-image: url(../ressources/images/bobine.png);
 	background-repeat: no-repeat;
-	background-size: auto 90%;
+	background-size: auto 50%;
 	background-position: center;
 }
 /* intro.php*/
@@ -616,3 +616,4 @@ button:hover
 	height: 10%;
 	width: auto;
 }
+
