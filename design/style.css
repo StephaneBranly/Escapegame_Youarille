@@ -565,7 +565,6 @@ button:hover
 .quitter_croix
 {
 	float: left;
-	display: inline-block;
 	margin: 30px;
 	height: 30px;
 	width: auto;
@@ -614,7 +613,6 @@ button:hover
 }
 #travaux img
 {
-	display: inline;
 	height: 10%;
 	width: auto;
 }

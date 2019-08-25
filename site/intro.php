@@ -1,6 +1,7 @@
 <?php
     session_start();
     $_SESSION["page_actu"]="intro.php";
+    $_SESSION['connecte']=0;
 ?>
 <html>
     <head>
@@ -12,8 +13,8 @@
             <div id='intro' onclick="click_intro(in_hit_box(event,tableau_hitbox,param_hb_dim_bg,false));">
                 <?php
                     $debut=1;
-                    if(isset($_GET['debut']))
-                    {$debut=$_GET['debut'];}
+                    if(isset($_SESSION['debut']))
+                    {$debut=$_SESSION['debut'];}
                     if($debut==1)
                     {
                         echo"<p class='popup' id='popup_intro' style=\"visibility:hidden\" onclick=\"close_popup('popup_intro');\">
@@ -27,7 +28,14 @@
                         <br/>Je sais que l'escape game n'est pas parfait, mais le principal c'est de s'amuser ;)
                         <br/><br/>GOOD LUCK !<br/><br/><br/><br/>v1.0.2
                         </p>";
+                        function microtime_float() 
+                            {
+                            list($usec, $sec) = explode(" ", microtime());
+                            return ((float)$usec + (float)$sec);
+                            }
+                        $_SESSION['time_start']=microtime_float();
                     }
+                    $_SESSION['debut']=0;
                 ?>
                 <a href='taxi.php'><p class='fleche fleche_right' title='Sortir prendre le taxi'></p></a>
                 <p class='popup' id='popup_pika' style="visibility:hidden" onclick="close_popup('popup_pika');"></p>

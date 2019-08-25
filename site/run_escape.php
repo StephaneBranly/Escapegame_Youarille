@@ -1,6 +1,7 @@
 <?php
     session_start();
     $_SESSION["page_actu"]="run_escape.php";
+    
 ?>
 <html>
     <head>
@@ -12,8 +13,14 @@
             <?php
                 $page=1;
                 if(isset($_GET['page']))
-                {$page=$_GET['page'];}
-            
+                {
+                    $page=$_GET['page'];
+                    $_SESSION['page']=$page;
+                }
+                if(isset($_SESSION['page']))
+                {
+                    $page=$_SESSION['page'];
+                }
                 $badge=0;
                 if(isset($_GET['badge']))
                 {$badge=$_GET['badge'];}

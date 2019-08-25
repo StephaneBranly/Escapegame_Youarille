@@ -7,24 +7,22 @@
     <?php
         $mdp='aaa';
         $user='aaa';
+        $connecte=0;
+        if(isset($_SESSION['connecte']))
+        {
+            $connecte=$_SESSION['connecte'];
+        }
         if(isset($_POST['horde_pass']))
         {
             $mdp=$_POST['horde_pass'];
-        }
-        if(isset($_GET['mdp']))
-        {
-            $mdp=$_GET['mdp'];
         }
         if(isset($_POST['horde_user']))
         {
             $user=$_POST['horde_user'];
         }
-        if(isset($_GET['user']))
+        if((preg_match('/[Qq]ueue(.|)de(.|)[Ff]er/',$mdp) && preg_match('/[Vv]endetta/',$user))||$connecte==1)
         {
-            $user=$_GET['user'];
-        }
-        if(preg_match('/[Qq]ueue(.|)de(.|)[Ff]er/',$mdp) && preg_match('/[Vv]endetta/',$user))
-        {
+            $_SESSION['connecte']=1;
     echo"<html lang='en-US'>
     <head>
         <meta http-equiv='content-type' content='text/html; charset=UTF-8'>
@@ -110,7 +108,7 @@
                             foreach($mails as $un_mail)
                             {
 
-                            echo"<a href='pc_mail.php?mail=$un_mail[0]&mdp=queuedefer&user=Vendetta'><div class='vpRowHoriz vpRow DragElt' id='VProw_6' style='background: none repeat scroll 0% 0%; -moz-user-select: none;'>
+                            echo"<a href='pc_mail.php?mail=$un_mail[0]'><div class='vpRowHoriz vpRow DragElt' id='VProw_6' style='background: none repeat scroll 0% 0%; -moz-user-select: none;'>
                                 <div class='msgFrom sep' title='$un_mail[1]'>$un_mail[2]</div>
                                 <div class='msgSubject sep' title='$un_mail[3]'>$un_mail[3]</div>
                                 <div class='msgDate sep'>$un_mail[4]</div>
@@ -192,6 +190,6 @@
         }
 ?>
 
-<a href='intro.php?debut=0'><div id='quitter_ordi'>Quitter l'ordinateur</div></a>
+<a href='intro.php'><div id='quitter_ordi'>Quitter l'ordinateur</div></a>
 </body>
 </html>

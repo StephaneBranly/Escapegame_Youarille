@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $_SESSION["page_actu"]="taxi_escape.php";
+    $_SESSION["page_actu"]="intro.php";
 ?>
 <html>
     <head>

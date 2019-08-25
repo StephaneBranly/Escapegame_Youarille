@@ -18,14 +18,45 @@
         $angle3=0;
         $tenter=0;
         if(isset($_POST['angle0']))
-            {$angle0=$_POST['angle0'];$tenter=1;}
+        {
+            $angle0=$_POST['angle0'];
+            $tenter=1;
+            $_SESSION['angle0']=$angle0;
+        }
         if(isset($_POST['angle1']))
-            {$angle1=$_POST['angle1'];$tenter=1;}
+        {
+            $angle1=$_POST['angle1'];
+            $tenter=1;
+            $_SESSION['angle1']=$angle1;
+        }
         if(isset($_POST['angle2']))
-            {$angle2=$_POST['angle2'];$tenter=1;}
+        {
+            $angle2=$_POST['angle2'];
+            $tenter=1;
+            $_SESSION['angle2']=$angle2;
+        }
         if(isset($_POST['angle3']))
-            {$angle3=$_POST['angle3'];$tenter=1;}
-
+        {
+            $angle3=$_POST['angle3'];
+            $tenter=1;
+            $_SESSION['angle3']=$angle3;
+        }
+        if(isset($_SESSION['angle0']))
+        {
+            $angle0=$_SESSION['angle0']; 
+        }
+        if(isset($_SESSION['angle1']))
+        {
+            $angle1=$_SESSION['angle1']; 
+        }
+        if(isset($_SESSION['angle2']))
+        {
+            $angle2=$_SESSION['angle2']; 
+        }
+        if(isset($_SESSION['angle3']))
+        {
+            $angle3=$_SESSION['angle3']; 
+        }
             echo "<section id='main'>
                     <a href='labo53.php'><p class='fleche fleche_left' title='Retourner au labo'></p></a>
                     <div id='les_serrures_coffre'>
@@ -35,7 +66,7 @@
                         <img onDragStart='return false' style='transform: rotate($angle3";echo"deg);' onmousemove='tourner_serrure(event,3);' id='serrure3' class='serrure_coffre' src='../ressources/images/serrure_coffre_fort.png'/>
                     </div>
                 </section>";
-            echo "<script>alert(\"$angle0 , $angle1 , $angle2 , $angle3\")</script>";
+            /*echo "<script>alert(\"$angle0 , $angle1 , $angle2 , $angle3\")</script>";*/
             echo "<script>var angles_serrures=[$angle0 ,$angle1,$angle2,$angle3]</script>";
             /*echo "<script>alert(\"$number0 , $number1 , $number2 , $number3\")</script>";*/
             echo "<section id='text_section'>Tourne les curseurs ! 

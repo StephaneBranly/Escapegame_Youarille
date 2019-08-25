@@ -18,6 +18,28 @@
                         Ensemble, je suis sûr qu'on y arrivera ! <br/> Viens nous rencontrer lors de la pré-integ Youa le 1er Septembre à Compiègne !<br/>
                         <br/>Pour plus d'informations, ajoute Sire Youarille sur Facebook et suit les publications sur Intégration UTC et Alain Tégration !<br/><br/>
                         On compte sur toi pour être la nouvö !<br/><br/>Merci et félicitations pour avoir terminé cet escape game !
+                        <?php
+                            function microtime_float() 
+                            {
+                            list($usec, $sec) = explode(" ", microtime());
+                            return ((float)$usec + (float)$sec);
+                            }
+
+
+
+                            // Attends pendant un moment
+                            usleep(100);
+                            if(isset($_SESSION['time_start']))
+                            {
+                                echo "<br/><br/>";
+                                $time_start=$_SESSION['time_start'];
+                                $time_end = microtime_float();
+                                $time = $time_end - $time_start;
+    
+                                echo  "Terminé en $time secondes";
+                            }
+                           
+                            ?>
         </div>
     </section>
 </body>

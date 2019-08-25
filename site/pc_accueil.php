@@ -56,6 +56,6 @@
 <br>
 <table width="100%"><tbody><tr><td align="center">Powered by Horde</td></tr></tbody></table>
 
-<a href='intro.php?debut=0'><div id='quitter_ordi'>Quitter l'ordinateur</div></a>
+<a href='intro.php'><div id='quitter_ordi'>Quitter l'ordinateur</div></a>
 <div id='info_simulation'>C'est un jeu (NE PAS mettre ses identifiants persos)</div>
 </body></html>
