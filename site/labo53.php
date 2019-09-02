@@ -33,10 +33,14 @@
                 <p class='popup' id='popup_bobine' style="visibility:hidden" onclick="close_popup('popup_bobine');"></p>
                 <p class='popup' id='popup_tournevis' style="visibility:hidden" onclick="close_popup('popup_tournevis');"></p>
                 <p class='popup' id='popup_des' style="visibility:hidden" onclick="close_popup('popup_des');"></p>
+                <p class='popup' id='popup_indice1' style="visibility:hidden" onclick="close_popup('popup_indice1');"><span>Tu verras que les seuls indices utiles n'apparaissent pas dans tes items ! <br/>Note les sur un bout de papier.<br/>Fouille les cartons, les poubelles, les tiroirs, les casiers...</span></p>
+                <p class='popup' id='popup_indice2' style="visibility:hidden" onclick="close_popup('popup_indice2');"><span>Décode ce que tu vois sur l'écran, calcule quels chiffres entre 0 et 9 sont le cube d'un autre chiffre (qui devra être présent dans le code), <br/>regarde où est placé le dé, ensuite avec les autres conditions (n,n+1) et (n,n*2), tu peux trouver le code !</span></p>
                 <p class='popup' id='popup_manette' style="visibility:hidden" onclick="close_popup('popup_manette');"></p>
                 <div id='hitbox'></div>
             </div>
         </section>
+        <div id='indice1' onclick="open_popup('popup_indice1');">Indice 1</div>
+        <div id='indice2' onclick="open_popup('popup_indice2');">Indice 2</div>
         <section id='text_section'>
             <p class='typewriter'>Etape finale ! Retrouvez le bidet doré !</p>
         </section> 

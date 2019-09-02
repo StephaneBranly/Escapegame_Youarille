@@ -30,12 +30,14 @@
                 <p class='popup' id='popup_faucheuse' style="visibility:hidden" onclick="setTimeout(function() { document.location.href='intro.php'; }, 500);"></p>
                 <p class='popup' id='popup_fenetre_cassee_left' style="visibility:hidden"></p>
                 <p class='popup' id='popup_fenetre_cassee_back' style="visibility:hidden"></p>
+                <p class='popup' id='popup_indice1' style="visibility:hidden" onclick="close_popup('popup_indice1');"><span>Il faut que tu trouves un objet volumineux <br/>pour casser cette vitre, où pourrais-tu le trouver...</span></p>
                 <div id='hitbox'></div>
             </div>
         </section>
         <section id='text_section'>
             <p class='typewriter'>Dépêche toi ! Il y a un gaz qui se propage</p>
         </section> 
+        <div id='indice1' onclick="open_popup('popup_indice1');">Indice 1</div>
         <div id='item_bar'></div>
         <div id='chronotime' >0:01:30:000</div>
     </body>

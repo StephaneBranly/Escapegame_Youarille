@@ -51,9 +51,13 @@
                 <p class='popup' id='popup_tel' style="visibility:hidden" onclick="close_popup('popup_tel');"></p>
                 <p class='popup' id='popup_screen_pc' style="visibility:hidden" onclick="close_popup('popup_screen_pc');"></p>
                 <p class='popup' id='popup_lettre' style="visibility:hidden" onclick="close_popup('popup_lettre');"></p>
+                <p class='popup' id='popup_indice1' style="visibility:hidden" onclick="close_popup('popup_indice1');"><span>Il faut que tu comprennes la mission dans le jeu, <br/>et comment on te surnomme pour pouvoir par la suite fouiller l'ordinateur...</span></p>
+                <p class='popup' id='popup_indice2' style="visibility:hidden" onclick="close_popup('popup_indice2');"><span>Ton surnom est sur la lettre, il ne te manque plus que ton mot de passe, <br/> comment fais-tu quand tu as "Oublié ton mot de passe" ?...</span></p>
                 <div id='hitbox'></div>
             </div>
         </section>
+        <div id='indice1' onclick="open_popup('popup_indice1');">Indice 1</div>
+        <div id='indice2' onclick="open_popup('popup_indice2');">Indice 2</div>
         <section id='text_section'>
             <p class='typewriter'>Vendetta, intéragissez avec le décor</p>
         </section> 

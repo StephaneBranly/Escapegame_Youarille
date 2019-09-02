@@ -290,7 +290,7 @@ button:hover
 	background-size: auto 70%;
 	background-position: center;
 }
-#popup_poignee_portiere, #popup_loquet, #popup_fenetre, #popup_badge_faux, #popup_tiroir_ferme, #popup_salete
+#popup_poignee_portiere, #popup_loquet, #popup_fenetre, #popup_badge_faux, #popup_tiroir_ferme, #popup_salete, #popup_indice1, #popup_indice2
 {
 	background: rgba(189, 7, 7, 0.5);
 	color: white;
@@ -310,7 +310,7 @@ button:hover
 	vertical-align:middle;
 	display: table;
 }
-#popup_poignee_portiere span, #popup_loquet span, #popup_fenetre span, #popup_badge_faux span, #popup_tiroir_ferme span, #popup_ecran_binaire span, #popup_salete span
+#popup_poignee_portiere span, #popup_loquet span, #popup_fenetre span, #popup_badge_faux span, #popup_tiroir_ferme span, #popup_ecran_binaire span, #popup_salete span, #popup_indice1 span, #popup_indice2 span
 {
 	vertical-align:middle;
 	display: table-cell;
@@ -617,3 +617,23 @@ button:hover
 	width: auto;
 }
 
+/* Indices */
+#indice1, #indice2
+{
+	position: absolute;
+	color: white;
+	top: 10px;
+	right: 10px;
+	background: rgba(189, 7, 7, 0.9);
+	border: 1px solid red;
+	padding: 5px;
+}
+#indice2
+{
+	top:50px;
+}
+#indice1:hover, #indice2:hover
+{
+	cursor:pointer;
+	border:1px solid white;
+}
